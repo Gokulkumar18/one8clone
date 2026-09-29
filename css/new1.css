@@ -1,0 +1,764 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 12000px;
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.new1_logo {
+    margin-left: 20px;
+
+    border: 2px solid black;
+
+    width: 60px;
+    height: 60px;
+}
+
+
+.new1_logo .bg {
+    height: 100%;
+    width: 100%;
+
+    background-image: url(../images/one8logoskyblue.webp);
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+
+
+
+/* =========================
+   TRIBUTE
+   ========================= */
+
+.tribute {
+    height: 130px;
+
+    width: 100%;
+
+    border: 2px solid black;
+
+    margin-top: 20px;
+
+    padding: 10px;
+}
+
+
+.tribute h3 {
+    font-weight: bold;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.tribute p {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================
+   CARD SECTION
+   ========================= */
+
+.tribute_section {
+    width: 100%;
+
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 730px);
+
+    gap: 10px;
+
+    margin: 20px;
+}
+
+
+
+/* =========================
+   CARD BOX
+   ========================= */
+
+.tribute_section .card_box {
+    width: 730px;
+}
+
+
+
+/* =========================
+   IMAGE CARD
+   ========================= */
+
+.tribute_section .cards {
+    width: 100%;
+
+    height: 680px;
+
+    border: 2px solid green;
+
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+
+/* =========================
+   FIRST CARD IMAGE
+   ========================= */
+
+.tribute_section .card_one {
+    background-image: url(../images/explore_clothing_img.webp);
+}
+
+
+
+/* =========================
+   SECOND CARD IMAGE
+   ========================= */
+
+.tribute_section .card_two {
+    background-image: url(../images/explore_shoe_img.webp);
+}
+
+
+
+/* =========================
+   CONTENT AFTER CARD
+   ========================= */
+
+.tribute_section .card_content {
+    width: 100%;
+
+    padding: 15px 5px;
+
+    background: white;
+}
+
+
+
+/* CARD TITLE */
+
+.tribute_section .card_content h3 {
+    font-size: 22px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+
+/* CARD DESCRIPTION */
+
+.tribute_section .card_content p {
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.new1_logo {
+    margin-left: 20px;
+
+    border: 2px solid black;
+
+    width: 60px;
+    height: 60px;
+}
+
+
+.new1_logo .bg {
+    height: 100%;
+    width: 100%;
+
+    background-image: url(../images/one8logoskyblue.webp);
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+
+
+
+/* =========================
+   TRIBUTE
+   ========================= */
+
+.tribute {
+    height: 130px;
+
+    width: 100%;
+
+    border: 2px solid black;
+
+    margin-top: 20px;
+
+    padding: 10px;
+}
+
+
+.tribute h3 {
+    font-weight: bold;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.tribute p {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================
+   CARD SECTION
+   ========================= */
+
+.tribute_section {
+    width: 100%;
+    height: 98vh;
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 730px);
+
+    gap: 7px;
+
+    margin: 15px;
+}
+
+
+
+/* =========================
+   CARD BOX
+   ========================= */
+
+.tribute_section .card_box {
+    width: 730px;
+}
+
+
+
+/* =========================
+   IMAGE CARD
+   ========================= */
+
+.tribute_section .cards {
+    width: 100%;
+
+    height: 600px;
+
+    border: 2px solid green;
+
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+
+/* FIRST IMAGE */
+
+.tribute_section .card_one {
+    background-image: url(../images/explore_clothing_img.webp);
+}
+
+
+
+/* SECOND IMAGE */
+
+.tribute_section .card_two {
+    background-image: url(../images/explore_shoe_img.webp);
+}
+
+
+
+/* =========================
+   CONTENT AFTER CARD
+   ========================= */
+
+.tribute_section .card_content {
+    width: 100%;
+    text-align: center;
+
+    background: white;
+    /* border: 2px solid black; */
+    margin-top: 25px;
+}
+
+
+
+.tribute_section .card_content a {
+    font-size: 15px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    border: 2px solid aqua;
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    text-align: center;
+    padding: 15px 30px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.culture1{
+    width: 100%;
+    height: 120px;
+    border: 2px solid black;
+    margin: 15px;
+    
+}.culture1 h3{
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+}.culture1 p{
+    padding-bottom: 10px;
+
+}.culture2_vid {
+    margin-top: 45px;
+    width: 100%;
+    height: 700px;
+
+    background-color: black;
+   padding: 15px 0px;
+    /* padding-top: 80px; */
+}
+
+.culture2_vid video {
+    width: 100%;
+    height: 670px;
+
+    object-fit: cover;
+    display: block;
+}.culture3_photos {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    gap: 7px;
+
+    background-color: white;
+
+    margin-top: 60px;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 15px;
+}
+
+.culture3_photos .cart1 {
+    flex-shrink: 0;
+    width: 300px;
+    height: 100%;
+    background: url(../images/culture3_photos/1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+}
+
+.culture3_photos .cart2 {
+    flex-shrink: 0;
+
+    width: 470px;
+    height: 100%;
+
+    background: url(../images/culture3_photos/2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+}
+
+.culture3_photos .cart3 {
+    flex-shrink: 0;
+
+    width: 590px;
+    height: 100%;
+
+    background: url(../images/culture3_photos/3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+}
+
+.culture3_photos .cart4 {
+    flex-shrink: 0;
+
+    width: 800px;
+    height: 100%;
+
+    background: url(../images/culture3_photos/4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+}
+
+
+.culture5_vid{
+    margin-top: 45px;
+    width: 100%;
+    height: 680px;
+border: 2px solid black;
+    background-color:white;
+  
+   padding: 15px 0px;
+
+}
+.culture5_vid video {
+    width: 100%;
+    height: 670px;
+
+    object-fit: cover;
+    /* display: block; */
+}
+
+
+
+
+
+.example_photo_container1 {
+    margin-top: 50px;
+    width: 100%;
+    height:1150px;
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    border: 2px solid black;
+}
+
+.example_photo_container1 .photo1 {
+    width: 50%;
+    height: 1100px;
+    border-radius: 10px;
+    background: url(../images/exp_photo_container1/1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.example_photo_container1 .photo2 {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.example_photo_container1 .photo2_img {
+    width: 100%;
+    height: 800px;
+    border-radius: 10px;
+    background-image: url(../images/exp_photo_container1/2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo2_content {
+    padding: 15px;
+}
+.photo2_content p {
+    margin-top: 13px;
+}
+
+
+
+.example_photo_container2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    border: 2px solid black;
+    height: 830px;
+}
+
+.example_photo_container2 .photo1 {
+    margin-top: 150px;
+    width: 50%;
+    height: 600px;
+    background: url(../images/example_photo_container2/3.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.example_photo_container2 .photo2 {
+    width: 50%;
+    height: 820px;
+    background: url(../images/example_photo_container2/4.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 10px;
+}.example_photo_container3{
+    margin-top: 100px;
+    border: 2px solid black;
+    width: 100%;
+    height: 700px;
+    background: url(../images/exp_photo_container3/5.webp);
+}
+
+
+
+
+
+.elevate{
+    font-weight: bold;
+    margin-top: 110px;
+    font-size: 25px;
+    
+}
+
+.elevate_yr_evrdy {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+
+/* CARD */
+
+.elevate_yr_evrdy .card {
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* FIRST IMAGE */
+
+.elevate_yr_evrdy .img1 {
+    background-image: url(../images/elevate_yr_evrdy/footwear1.webp);
+}
+
+.elevate_yr_evrdy .img2 {
+    background-image: url(../images/elevate_yr_evrdy/clothing.webp);
+}
+
+.elevate_yr_evrdy .img3 {
+    background-image: url(../images/elevate_yr_evrdy/caps.webp);
+}
+
+.elevate_yr_evrdy .img4 {
+    background-image: url(../images/elevate_yr_evrdy/footwear.jpg);
+}
+
+
+/* SECOND IMAGE */
+
+.elevate_yr_evrdy .hover_img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* SECOND IMAGE FOR EACH CARD */
+
+.elevate_yr_evrdy .img1 .hover_img {
+    background-image: url(../images/logo.png);
+}
+
+.elevate_yr_evrdy .img2 .hover_img {
+    background-image: url(../images/elevate_yr_evrdy/2_hover.webp);
+}
+
+.elevate_yr_evrdy .img3 .hover_img {
+    background-image: url(../images/elevate_yr_evrdy/3_hover.webp);
+}
+
+.elevate_yr_evrdy .img4 .hover_img {
+    background-image: url(../images/elevate_yr_evrdy/4_hover.webp);
+}
+
+
+/* HOVER SECOND IMAGE */
+
+.elevate_yr_evrdy .card:hover .hover_img {
+    opacity: 0.7;
+}
+
+
+/* BUTTON */
+
+.elevate_yr_evrdy button {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+    font-weight: bold;
+    transform: translateX(-50%);
+
+    padding: 18px 40px;
+
+    border: none;
+    background-color:aqua;
+    color: black;
+    border-radius:20px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+    font-size: 14px;
+    z-index: 2;
+}.elevate_yr_evrdy button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* SHOW BUTTON */
+
+.elevate_yr_evrdy .card:hover button {
+    opacity: 1;
+}
+
+.elevate_yr_evrdy .img1 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 36%;
+
+    margin: 0;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.elevate_yr_evrdy .img2 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 40%;
+
+    margin: 0;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.elevate_yr_evrdy .img3 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 42%;
+
+    margin: 0;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.elevate_yr_evrdy .img4 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 32%;
+
+    margin: 0;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}

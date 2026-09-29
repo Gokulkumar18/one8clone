@@ -1,0 +1,1920 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.main-container {
+    width: 100%;
+    
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+    padding: 15px;
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+========================================================= */
+
+.mobile-header {
+    display: none;
+}
+
+
+/* =========================================================
+   LEFT CONTAINER
+========================================================= */
+
+.left-container {
+    width: 400px;
+
+    flex-shrink: 0;
+
+    /* border: 2px solid #5e1111; */
+    padding: 15px;
+
+    background-color: white;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+}
+
+.left-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================================
+   LEFT TITLE
+========================================================= */
+
+.left-title {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 10px;
+
+    border: none;
+    border-bottom: 1px solid #d0d0d0;
+
+    background-color: transparent;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+/* 
+.left-title i {
+    font-size: 12px;
+} */
+
+
+/* =========================================================
+   LEFT DETAILS
+========================================================= */
+
+.left-details {
+    padding: 10px;
+
+    background-color: #ffffff;
+}
+
+.left-details p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MAIN HEADER - NO COLLAPSE
+========================================================= */
+
+.main-header {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 12px 10px;
+
+    border-bottom: 1px solid #d0d0d0;
+
+    background-color: transparent;
+}
+
+
+/* =========================================================
+   MAIN HEADER TEXT
+========================================================= */
+
+.main-header .header-text {
+    flex: 1;
+
+}.home{
+    height: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    /* border: 2px solid black; */
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-header .header-text p {
+    margin-bottom: 10px;
+
+    font-size: 11px;
+
+    color: #555555;
+}
+
+
+.main-header .header-text p a {
+    color: #000000;
+    font-size:15px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.main-header .header-text p a:hover {
+    text-decoration: underline;
+}
+
+
+.main-header .header-text h3 {
+
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    color: #000000;
+}
+
+
+.main-header .header-text span {
+    font-size: 14px;
+    padding-right: 10px;
+    color: #666666;
+}
+
+
+/* =========================================================
+   MAIN HEADER ARROW
+   STATIC - NO COLLAPSE
+========================================================= */
+
+.main-header > i {
+    font-size: 14px;
+
+    color: #000000;
+
+    margin-top: 5px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SMALL SUBTITLES
+========================================================= */
+
+.small-subtitles {
+    width: 100%;
+
+    padding: 5px 10px;
+   
+    background-color: #ffffff;
+}
+
+
+.small-subtitle {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 10px;
+
+    margin-bottom: 4px;
+
+    /* border: 1px solid #d0d0d0; */
+
+    background-color:transparent; 
+
+    color: #000000;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight:400;
+}
+
+
+.small-subtitle:hover {
+    background-color: #f2f2f2;
+
+    color: #000000;
+}
+
+
+.small-subtitle span:last-child {
+    font-size: 2px;
+
+    font-weight: bold;
+}
+/* .sm_squrae {
+    /* display: inline-block; */
+    width: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 8px;
+}  */
+
+/* =========================================================
+   RIGHT CONTAINER
+========================================================= */
+
+.right-container {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   TOP CONTAINER
+========================================================= */
+.top-container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,300px);
+
+    gap: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+
+/* =========================================================
+   TOP CARD
+========================================================= */
+
+.top-card {
+    width: 100%;
+
+     border-radius: 7px;
+
+    height: 350px;
+
+
+    border: 1px solid #d0d0d0;
+
+    background-color: #f5f5f5;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP CARD IMAGE
+========================================================= */
+
+.top-card-image {
+    width: 100%;
+
+    height: 260px;
+
+    background-size: contain;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   TOP CARD IMAGES
+========================================================= */
+
+.image1 {
+    background-image: url("../images/mens_sec/men_jym.webp");
+}
+
+
+.image2 {
+    background-image: url("../images/mens_sec/men_running.webp");
+}
+
+
+.image3 {
+    background-image: url("../images/mens_sec/men_cricket.webp");
+}
+
+
+.image4 {
+    background-image: url("../images/mens_sec/men_lifestyle.webp");
+}
+
+
+/* =========================================================
+   TOP CARD CONTENT
+========================================================= */
+
+ .top-card-content {
+    margin-top: 8px;
+    padding: 15px;
+    background:#F5F5F5;
+    text-align: left;
+}
+
+/* 
+.top-card-content h3 {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+
+.top-card-content p {
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}   */
+
+
+/* =========================================================
+   TOP CARD BUTTON
+========================================================= */
+
+.card-button {
+    display: inline-block;
+
+    padding: 9px 10px;
+
+    
+
+    color: black;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* .card-button:hover {
+    background-color: #444444;
+
+    color: #ffffff;
+} */
+
+
+/* =========================================================
+   MIDDLE CONTAINER
+========================================================= */
+
+/* .middle-container {
+    width:10%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 10px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    background: chartreuse;
+} */
+
+
+/* =========================================================
+   MOBILE MENU BOX
+========================================================= */
+
+.mobile-menu-box {
+    display: none;
+}
+
+
+/* =========================================================
+   MAIN HEADING BOX
+========================================================= */
+
+.main-heading-box {
+    width: 250px;
+    margin-left: 800px;
+    padding: 0;
+    border: 2px solid black;
+    color: #000000;
+    background-color: white;
+    border-radius: 10px;
+
+    position: relative;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+.middle-title {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+#mainHeading {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   MIDDLE TITLE
+========================================================= */
+
+.middle-title {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 15px;
+
+    border: none;
+
+    background-color: #f5f5f5;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   MAIN HEADING CONTENT
+========================================================= */
+
+.main-heading-content {
+    padding: 10px 10px; 
+ text-align: left;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.main-heading-content h3 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.main-heading-content a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+   text-align: left;
+
+}
+
+
+/* =========================================================
+   BOTTOM CONTAINER
+========================================================= */
+
+.bottom-container {
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   WOMEN 12 CARD SECTION
+========================================================= */
+.men {
+    width: 98%;
+    height: 950px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 600px);
+
+    gap: 20px;
+
+    overflow: auto;
+    /* overflow-x: hidden; */
+
+    scrollbar-width: none;
+
+    /* border: 2px solid black; */
+}
+
+.men::-webkit-scrollbar {
+    display: none;
+}
+.men .cards {
+    width: 100%;
+    height: 570px;
+
+    background-color: #F5F5F5;
+
+    border-radius: 5px;
+
+    /* overflow: hidden; */
+
+    position: relative;
+
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.men .cards .bg {
+    width: 100%;
+
+    height: 75%;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+/* =========================================================
+   CARD 1
+========================================================= */
+
+.men .cards:nth-child(1) .bg {
+    background-image: url("../images/mens_sec/1.webp");
+}
+
+.men .cards:nth-child(1) .bg:hover {
+    background-image: url("../images/mens_sec/1.1.webp");
+}
+
+
+/* =========================================================
+   CARD 2
+========================================================= */
+
+.men .cards:nth-child(2) .bg {
+    background-image: url("../images/mens_sec/2.webp");
+}
+
+.men .cards:nth-child(2) .bg:hover {
+    background-image: url("../images/mens_sec/2.1.webp");
+}
+
+
+/* =========================================================
+   CARD 3
+========================================================= */
+
+.men .cards:nth-child(3) .bg {
+    background-image: url("../images/mens_sec/3.webp");
+}
+
+.men .cards:nth-child(3) .bg:hover {
+    background-image: url("../images/mens_sec/3.1.jpg");
+}
+
+
+/* =========================================================
+   CARD 4
+========================================================= */
+
+.men .cards:nth-child(4) .bg {
+    background-image: url("../images/mens_sec/4.webp");
+}
+
+.men .cards:nth-child(4) .bg:hover {
+    background-image: url("../images/mens_sec/4.1.webp");
+}
+
+
+/* =========================================================
+   CARD 5
+========================================================= */
+
+.men .cards:nth-child(5) .bg {
+    background-image: url("../images/mens_sec/5.webp");
+}
+
+.men .cards:nth-child(5) .bg:hover {
+    background-image: url("../images/mens_sec/5.1.webp");
+}
+
+
+/* =========================================================
+   CARD 6
+========================================================= */
+
+.men .cards:nth-child(6) .bg {
+    background-image: url("../images/mens_sec/6.webp");
+}
+
+.men .cards:nth-child(6) .bg:hover {
+    background-image: url("../images/mens_sec/6.1.webp");
+}
+
+
+/* =========================================================
+   CARD 7
+========================================================= */
+
+.men .cards:nth-child(7) .bg {
+    background-image: url("../images/mens_sec/7.webp");
+}
+
+.men .cards:nth-child(7) .bg:hover {
+    background-image: url("../images/mens_sec/7.1.webp");
+}
+
+
+/* =========================================================
+   CARD 8
+========================================================= */
+
+.men .cards:nth-child(8) .bg {
+    background-image: url("../images/mens_sec/8.webp");
+}
+
+.men .cards:nth-child(8) .bg:hover {
+    background-image: url("../images/mens_sec/8.1.webp");
+}
+
+
+/* =========================================================
+   CARD 9
+========================================================= */
+
+.men .cards:nth-child(9) .bg {
+    background-image: url("../images/mens_sec/9.webp");
+}
+
+.men .cards:nth-child(9) .bg:hover {
+    background-image: url("../images/mens_sec/9.1.webp");
+}
+
+
+/* =========================================================
+   CARD 10
+========================================================= */
+
+.men .cards:nth-child(10) .bg {
+    background-image: url("../images/mens_sec/10.webp");
+}
+
+.men .cards:nth-child(10) .bg:hover {
+    background-image: url("../images/mens_sec/10.1.webp");
+}
+
+
+/* =========================================================
+   CARD 11
+========================================================= */
+
+.men .cards:nth-child(11) .bg {
+    background-image: url("../images/mens_sec/11.webp");
+}
+
+.men .cards:nth-child(11) .bg:hover {
+    background-image: url("../images/mens_sec/11.1.webp");
+}
+
+
+/* =========================================================
+   CARD 12
+========================================================= */
+
+.men .cards:nth-child(12) .bg {
+    background-image: url("../images/mens_sec/12.webp");
+}
+
+.men .cards:nth-child(12) .bg:hover {
+    background-image: url("../images/mens_sec/12.1.webp");
+}
+
+/* =========================================================
+   DROP BUTTON
+========================================================= */
+
+.button1 {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    background-color:lightgray;
+
+    color: black;
+
+    padding: 8px 12px;
+
+    border: none;
+
+    margin: 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    z-index: 2;
+    /* border: 2px solid black; */
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.button1 .spinner-grow {
+    width: 7px;
+
+    height: 7px;
+}
+
+
+/* =========================================================
+   HEART BUTTON
+========================================================= */
+
+.men .cards .bg .button2 {
+    position: absolute;
+
+    top: 5px;
+
+    right: 0;
+
+    margin-right: 15px;
+
+    height: 30px;
+
+    width: 30px;
+
+    border: none;
+
+    background-color: transparent;
+
+    z-index: 2;
+}
+
+
+.button2 a {
+    text-decoration: none;
+}
+
+
+.button2 i {
+    font-size: 20px;
+
+    color: black;
+}
+
+
+.button2 i:hover {
+    color: red;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.men .cards .content {
+    text-align: left;
+    width: 100%;
+
+    height: 25%;
+
+    padding-left: 20px;
+
+    padding-top: 5px;
+
+    background-color: #F5F5F5;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.men .cards .content h5 {
+    font-weight: bold;
+     
+    margin-bottom: 5px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   CARD PRODUCT NAME
+========================================================= */
+
+.men .cards .content p {
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   CARD PRICE
+========================================================= */
+
+.men .cards .content b {
+    display: block;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   CIRCLES
+========================================================= */
+
+.circles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   CARD 1
+========================================================= */
+
+.cards:nth-child(1) .circle:nth-child(1) {
+    background-color: #111111;
+}
+
+.cards:nth-child(1) .circle:nth-child(2) {
+    background-color: #E63946;
+}
+
+
+/* =========================================================
+   CARD 2
+========================================================= */
+
+.cards:nth-child(2) .circle:nth-child(1) {
+    background-color: #2563EB;
+}
+
+.cards:nth-child(2) .circle:nth-child(2) {
+    background-color: #60A5FA;
+}
+
+.cards:nth-child(2) .circle:nth-child(3) {
+    background-color: #DBEAFE;
+}
+
+
+/* =========================================================
+   CARD 3
+========================================================= */
+
+.cards:nth-child(3) .circle:nth-child(1) {
+    background-color: #F59E0B;
+}
+
+
+/* =========================================================
+   CARD 4
+========================================================= */
+
+.cards:nth-child(4) .circle:nth-child(1) {
+    background-color: #16A34A;
+}
+
+.cards:nth-child(4) .circle:nth-child(2) {
+    background-color: #4ADE80;
+}
+
+.cards:nth-child(4) .circle:nth-child(3) {
+    background-color: #86EFAC;
+}
+
+.cards:nth-child(4) .circle:nth-child(4) {
+    background-color: #DCFCE7;
+}
+
+
+/* =========================================================
+   CARD 5
+========================================================= */
+
+.cards:nth-child(5) .circle:nth-child(1) {
+    background-color: #9333EA;
+}
+
+.cards:nth-child(5) .circle:nth-child(2) {
+    background-color: #D8B4FE;
+}
+
+
+/* =========================================================
+   CARD 6
+========================================================= */
+
+.cards:nth-child(6) .circle:nth-child(1) {
+    background-color: #0891B2;
+}
+
+.cards:nth-child(6) .circle:nth-child(2) {
+    background-color: #22D3EE;
+}
+
+.cards:nth-child(6) .circle:nth-child(3) {
+    background-color: #A5F3FC;
+}
+
+
+/* =========================================================
+   CARD 7
+========================================================= */
+
+.cards:nth-child(7) .circle:nth-child(1) {
+    background-color: #EA580C;
+}
+
+.cards:nth-child(7) .circle:nth-child(2) {
+    background-color: #FB923C;
+}
+
+.cards:nth-child(7) .circle:nth-child(3) {
+    background-color: #FDBA74;
+}
+
+.cards:nth-child(7) .circle:nth-child(4) {
+    background-color: #FFEDD5;
+}
+
+
+/* =========================================================
+   CARD 8
+========================================================= */
+
+.cards:nth-child(8) .circle:nth-child(1) {
+    background-color: #EC4899;
+}
+
+.cards:nth-child(8) .circle:nth-child(2) {
+    background-color: #F9A8D4;
+}
+
+
+/* =========================================================
+   CARD 9
+========================================================= */
+
+.cards:nth-child(9) .circle:nth-child(1) {
+    background-color: #7C3AED;
+}
+
+.cards:nth-child(9) .circle:nth-child(2) {
+    background-color: #A78BFA;
+}
+
+.cards:nth-child(9) .circle:nth-child(3) {
+    background-color: #DDD6FE;
+}
+
+
+/* =========================================================
+   CARD 10
+========================================================= */
+
+.cards:nth-child(10) .circle:nth-child(1) {
+    background-color: #0F766E;
+}
+
+
+/* =========================================================
+   CARD 11
+========================================================= */
+
+.cards:nth-child(11) .circle:nth-child(1) {
+    background-color: #DC2626;
+}
+
+.cards:nth-child(11) .circle:nth-child(2) {
+    background-color: #F87171;
+}
+
+.cards:nth-child(11) .circle:nth-child(3) {
+    background-color: #FCA5A5;
+}
+
+.cards:nth-child(11) .circle:nth-child(4) {
+    background-color: #FEE2E2;
+}
+
+
+/* =========================================================
+   CARD 12
+========================================================= */
+
+.cards:nth-child(12) .circle:nth-child(1) {
+    background-color: #CA8A04;
+}
+
+.cards:nth-child(12) .circle:nth-child(2) {
+    background-color: #FACC15;
+}
+
+.cards:nth-child(12) .circle:nth-child(3) {
+    background-color: #FEF08A;
+}
+
+
+/* =========================================================
+   SMALL BOX
+========================================================= */
+.small-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    padding:20px;
+
+    border: 1px solid #999999;
+    background-color: white;
+
+    font-size: 16px;
+    white-space: nowrap;
+
+    position: absolute;
+    right: 0;
+
+    overflow: hidden;
+
+    transition: width 0.3s ease;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+
+/* Hide text normally */
+.small-box span {
+    display: none;
+}
+
+
+/* Expand when card is hovered */
+.cards:hover .small-box {
+    width: 120px;
+}
+
+
+/* Show text when card is hovered */
+.cards:hover .small-box span {
+    display: inline;
+}
+
+
+/* =========================================================
+   CARD 1 COLORS
+========================================================= */
+
+.men .cards:nth-child(1) .circle:nth-child(1) {
+    background-color: black;
+}
+
+
+.men .cards:nth-child(1) .circle:nth-child(2) {
+    background-color: white;
+}
+
+
+/* =========================================================
+   CARD 2 COLORS
+========================================================= */
+
+.men .cards:nth-child(2) .circle:nth-child(1) {
+    background-color: #eeeeee;
+}
+
+
+.men .cards:nth-child(2) .circle:nth-child(2) {
+    background-color: black;
+}
+
+
+/* =========================================================
+   CARD 3 COLORS
+========================================================= */
+
+.men .cards:nth-child(3) .circle:nth-child(1) {
+    background-color: #d8d8d8;
+}
+
+
+.men .cards:nth-child(3) .circle:nth-child(2) {
+    background-color: #222222;
+}
+
+
+/* =========================================================
+   CARD 4 COLORS
+========================================================= */
+
+.men .cards:nth-child(4) .circle:nth-child(1) {
+    background-color: white;
+}
+
+
+.men .cards:nth-child(4) .circle:nth-child(2) {
+    background-color: #bdbdbd;
+}
+
+
+/* =========================================================
+   CARD 5 COLORS
+========================================================= */
+
+.men .cards:nth-child(5) .circle:nth-child(1) {
+    background-color: #333333;
+}
+
+
+.men .cards:nth-child(5) .circle:nth-child(2) {
+    background-color: white;
+}
+
+
+/* =========================================================
+   CARD 6 COLORS
+========================================================= */
+
+.men .cards:nth-child(6) .circle:nth-child(1) {
+    background-color: #c4c4c4;
+}
+
+
+.men .cards:nth-child(6) .circle:nth-child(2) {
+    background-color: #111111;
+}
+
+
+/* =========================================================
+   CARD 7 COLORS
+========================================================= */
+
+.men .cards:nth-child(7) .circle:nth-child(1) {
+    background-color: white;
+}
+
+
+.men .cards:nth-child(7) .circle:nth-child(2) {
+    background-color: #555555;
+}
+
+
+/* =========================================================
+   CARD 8 COLORS
+========================================================= */
+
+.men .cards:nth-child(8) .circle:nth-child(1) {
+    background-color: #eeeeee;
+}
+
+
+.men .cards:nth-child(8) .circle:nth-child(2) {
+    background-color: #333333;
+}
+
+
+/* =========================================================
+   CARD 9 COLORS
+========================================================= */
+
+.men .cards:nth-child(9) .circle:nth-child(1) {
+    background-color: #222222;
+}
+
+
+.men .cards:nth-child(9) .circle:nth-child(2) {
+    background-color: white;
+}
+
+
+/* =========================================================
+   CARD 10 COLORS
+========================================================= */
+
+.men .cards:nth-child(10) .circle:nth-child(1) {
+    background-color: #c4c4c4;
+}
+
+
+.men .cards:nth-child(10) .circle:nth-child(2) {
+    background-color: #444444;
+}
+
+
+/* =========================================================
+   CARD 11 COLORS
+========================================================= */
+
+.men .cards:nth-child(11) .circle:nth-child(1) {
+    background-color: white;
+}
+
+
+.men .cards:nth-child(11) .circle:nth-child(2) {
+    background-color: #777777;
+}
+
+
+/* =========================================================
+   CARD 12 COLORS
+========================================================= */
+
+.men .cards:nth-child(12) .circle:nth-child(1) {
+    background-color: #333333;
+}
+
+
+.men .cards:nth-child(12) .circle:nth-child(2) {
+    background-color: #eeeeee;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   768px AND BELOW
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------------- MAIN ---------------- */
+
+    .main-container {
+        width: 100%;
+
+        display: block;
+
+        padding: 10px;
+    }
+
+
+    /* ---------------- MOBILE HEADER ---------------- */
+
+    .mobile-header {
+        width: 100%;
+
+        height: 60px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        padding: 0 15px;
+
+        margin-bottom: 10px;
+
+        border: 1px solid #d0d0d0;
+
+        background-color: white;
+    }
+
+
+    .mobile-logo {
+        font-size: 20px;
+
+        font-weight: bold;
+    }
+
+
+    .mobile-icons {
+        display: flex;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+
+    .mobile-icons a {
+        color: black;
+
+        text-decoration: none;
+
+        font-size: 18px;
+    }
+
+
+    /* ---------------- LEFT ---------------- */
+
+    .left-container {
+        display: none;
+    }
+
+
+    /* ---------------- RIGHT ---------------- */
+
+    .right-container {
+        width: 100%;
+
+        display: flex;
+
+        gap: 10px;
+    }
+
+
+    /* ---------------- TOP ---------------- */
+
+    .top-container {
+        width: 100%;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 5px;
+    }
+
+
+    .top-card {
+        min-height: 220px;
+    }
+
+
+    .top-card-image {
+        height: 120px;
+    }
+
+
+    .top-card-content {
+        padding: 8px;
+    }
+
+
+    .top-card-content h3 {
+        font-size: 12px;
+    }
+
+
+    .top-card-content p {
+        font-size: 10px;
+    }
+
+
+    .card-button {
+        padding: 6px 8px;
+
+        font-size: 10px;
+    }
+
+
+    /* ---------------- MIDDLE ---------------- */
+
+    .middle-container {
+        display: flex;
+
+        flex-direction: row;
+
+        gap: 5px;
+
+        align-items: flex-start;
+    }
+
+
+    /* ---------------- MOBILE MENU ---------------- */
+
+    .mobile-menu-box {
+        display: block;
+
+        width: 50%;
+
+        border: 1px solid #d0d0d0;
+
+        background-color: #f5f5f5;
+    }
+
+
+    .main-heading-box {
+        width: 50%;
+    }
+
+
+    .mobile-menu-content {
+        background-color: white;
+
+        padding: 5px;
+    }
+
+
+    .mobile-menu-content .left-title {
+        font-size: 11px;
+
+        padding: 10px 5px;
+    }
+
+
+    .mobile-menu-content .left-details {
+        padding: 8px;
+    }
+
+
+    .mobile-menu-content .left-details p {
+        font-size: 11px;
+    }
+
+
+    .mobile-menu-content .small-subtitles {
+        padding: 3px;
+    }
+
+
+    .mobile-menu-content .small-subtitle {
+        padding: 7px 5px;
+
+        font-size: 9px;
+    }
+
+
+    .middle-title {
+        padding: 12px 8px;
+
+        font-size: 11px;
+    }
+
+
+    .main-heading-content {
+        padding: 10px;
+    }
+
+
+    .main-heading-content h3 {
+        font-size: 14px;
+    }
+
+
+    .main-heading-content p {
+        font-size: 11px;
+    }
+
+
+    /* ---------------- WOMEN SECTION ---------------- */
+
+    .men {
+        width: 100%;
+
+        height: 520px;
+
+        grid-template-columns: repeat(12, 250px);
+
+        gap: 5px;
+
+        border: 1px solid black;
+    }
+
+
+    .men .cards {
+        width: 250px;
+
+        height: 500px;
+    }
+
+
+    .men .cards .bg {
+        height: 75%;
+    }
+
+
+    .men .cards .content {
+        height: 25%;
+
+        padding-left: 12px;
+
+        padding-top: 8px;
+    }
+
+
+    .men .cards .content h5 {
+        font-size: 10px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .men .cards .content p {
+        font-size: 12px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .men .cards .content b {
+        font-size: 16px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .circle {
+        width: 22px;
+
+        height: 22px;
+
+        min-width: 22px;
+    }
+
+
+    .small-box {
+        padding: 5px 7px;
+
+        font-size: 9px;
+    }
+
+
+    .button1 {
+        padding: 7px 9px;
+
+        font-size: 8px;
+    }
+
+
+    .button2 {
+        margin-right: 8px !important;
+    }
+
+
+    .button2 i {
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px AND BELOW
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ---------------- MAIN ---------------- */
+
+    .main-container {
+        padding: 7px;
+
+        gap: 8px;
+    }
+
+
+    /* ---------------- MOBILE HEADER ---------------- */
+
+    .mobile-header {
+        height: 55px;
+
+        padding: 0 10px;
+    }
+
+
+    .mobile-logo {
+        font-size: 18px;
+    }
+
+
+    .mobile-icons {
+        gap: 10px;
+    }
+
+
+    .mobile-icons a {
+        font-size: 16px;
+    }
+
+
+    /* ---------------- TOP ---------------- */
+
+    .top-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 3px;
+    }
+
+
+    .top-card {
+        min-height: 190px;
+    }
+
+
+    .top-card-image {
+        height: 100px;
+    }
+
+
+    .top-card-content {
+        padding: 6px;
+    }
+
+
+    .top-card-content h3 {
+        font-size: 9px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .top-card-content p {
+        display: none;
+    }
+
+
+    .card-button {
+        padding: 5px 6px;
+
+        font-size: 8px;
+    }
+
+
+    /* ---------------- MIDDLE ---------------- */
+
+    .middle-container {
+        gap: 3px;
+    }
+
+
+    .middle-title {
+        padding: 10px 6px;
+
+        font-size: 9px;
+    }
+
+
+    .mobile-menu-content .left-title {
+        padding: 8px 4px;
+
+        font-size: 9px;
+    }
+
+
+    .mobile-menu-content .left-details {
+        padding: 5px;
+    }
+
+
+    .mobile-menu-content .left-details p {
+        font-size: 9px;
+    }
+
+
+    .mobile-menu-content .small-subtitle {
+        padding: 6px 4px;
+
+        font-size: 8px;
+    }
+
+
+    .mobile-menu-content .small-subtitle span:last-child {
+        font-size: 11px;
+    }
+
+
+    .main-heading-content {
+        padding: 7px;
+    }
+
+
+    .main-heading-content h3 {
+        font-size: 11px;
+    }
+
+
+    .main-heading-content p {
+        font-size: 9px;
+    }
+
+
+    /* ---------------- WOMEN SECTION ---------------- */
+
+    .men {
+        width: 100%;
+
+        height: 470px;
+
+        grid-template-columns: repeat(12, 220px);
+
+        gap: 5px;
+
+        border: 1px solid black;
+    }
+
+
+    .men .cards {
+        width: 220px;
+
+        height: 450px;
+    }
+
+
+    .men .cards .bg {
+        height: 75%;
+    }
+
+
+    .men .cards .content {
+        height: 25%;
+
+        padding-left: 10px;
+
+        padding-top: 7px;
+    }
+
+
+    .men .cards .content h5 {
+        font-size: 9px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .men .cards .content p {
+        font-size: 10px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .men .cards .content b {
+        font-size: 14px;
+
+        margin-bottom: 7px;
+    }
+
+
+    .circle {
+        width: 20px;
+
+        height: 20px;
+
+        min-width: 20px;
+
+        border-width: 1px;
+    }
+
+
+    .circles {
+        gap: 6px;
+    }
+
+
+    .small-box {
+        padding: 4px 6px;
+
+        font-size: 8px;
+    }
+
+
+    .button1 {
+        padding: 5px 7px;
+
+        margin: 7px;
+
+        font-size: 7px;
+    }
+
+
+    .button1 .spinner-grow {
+        width: 5px;
+
+        height: 5px;
+    }
+
+
+    .button2 {
+        top: 3px !important;
+
+        right: 0 !important;
+
+        margin-right: 5px !important;
+    }
+
+
+    .button2 i {
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

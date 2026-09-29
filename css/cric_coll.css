@@ -1,0 +1,550 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* MAIN SECTION */
+
+.cricket {
+    width: 100%;
+    height: 100vh;
+
+    border: 2px solid black;
+
+    padding-top: 15px;
+}
+
+
+/* HEADING */
+
+.cricket h3 {
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* CARD CONTAINER */
+
+.cric {
+    width: 98%;
+    height: 650px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, 380px);
+
+    gap: 5px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+
+    border: 2px solid black;
+}
+
+
+/* HIDE SCROLLBAR */
+
+.cric::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* CARD */
+
+.cric .cards {
+    width: 380px;
+    height: 600px;
+
+    /* border: 2px solid green; */
+
+    background-color:#F5F5F5;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    position: relative;
+}
+  .cric .cards .bg {
+    position: relative;
+}
+
+
+/* BUTTON 1 - TOP LEFT */
+
+.button1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    background: green;
+    color: white;
+
+    padding: 8px 12px;
+    border: none;
+    margin: 10px;
+    border-radius: 20px;
+
+    font-size: 10px;
+}
+
+.button1 .spinner-grow {
+    width: 7px;
+    height: 7px;
+}
+
+
+/* BUTTON 2 - TOP RIGHT */
+
+.cric .cards .bg .button2 {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color:transparent;
+}
+.button2 a {
+    text-decoration: none;
+}
+
+.button2 i {
+    font-size: 20px;
+    color: black;
+
+}.button2 i:hover {
+    color: red;
+}
+
+
+/* IMAGE */
+
+.cric .cards .bg {
+    width: 100%;
+    height: 75%;
+
+    /* border-bottom: 2px solid black; */
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+/* CARD 1 */
+
+.cric .cards:nth-child(1) .bg {
+    background-image: url("../images/cric_coll/1.webp");
+}
+
+.cric .cards:nth-child(1) .bg:hover {
+    background-image: url("../images/cric_coll/3.webp");
+}
+
+
+/* CARD 2 */
+
+.cric .cards:nth-child(2) .bg {
+    background-image: url("../images/cric_coll/2.webp");
+}
+
+.cric .cards:nth-child(2) .bg:hover {
+    background-image: url("../images/cric_coll/2.1.webp");
+}
+
+
+/* CARD 3 */
+
+.cric .cards:nth-child(3) .bg {
+    background-image: url("../images/cric_coll/3.webp");
+}
+
+.cric .cards:nth-child(3) .bg:hover {
+    background-image: url("../images/cric_coll/3.1.webp");
+}
+
+
+/* CARD 4 */
+
+.cric .cards:nth-child(4) .bg {
+    background-image: url("../images/cric_coll/4.webp");
+}
+
+.cric .cards:nth-child(4) .bg:hover {
+    background-image: url("../images/cric_coll/4.1.webp");
+}
+
+
+/* CARD 5 */
+
+.cric .cards:nth-child(5) .bg {
+    background-image: url("../images/cric_coll/5.webp");
+}
+
+.cric .cards:nth-child(5) .bg:hover {
+    background-image: url("../images/cric_coll/5.1.webp");
+}
+
+
+/* CARD 6 */
+
+.cric .cards:nth-child(6) .bg {
+    background-image: url("../images/cric_coll/6.webp");
+}
+
+.cric .cards:nth-child(6) .bg:hover {
+    background-image: url("../images/cric_coll/6.1.webp");
+}
+
+
+/* CARD 7 */
+
+.cric .cards:nth-child(7) .bg {
+    background-image: url("../images/cric_coll/7.webp");
+}
+
+.cric .cards:nth-child(7) .bg:hover {
+    background-image: url("../images/cric_coll/7.1.jpg");
+}
+
+/* CONTENT */
+
+.cric .cards .content {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 25%;
+
+    padding-left: 20px;
+
+    padding-top: 10px;
+}
+
+
+/* TITLE */
+
+.cric .cards .content h5 {
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    font-size: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.cric .cards .content p {
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+
+/* PRICE */
+
+.cric .cards .content b {
+    display: block;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+/* CIRCLES CONTAINER */
+
+.circles {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* COMMON CIRCLE */
+
+.circle {
+    width: 25px;
+
+    height: 25px;
+
+    border-radius: 50%;
+
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CARD 1
+========================= */
+
+.cric .cards:nth-child(1) .circle:nth-child(1) {
+    background-color: black;
+}
+
+.cric .cards:nth-child(1) .circle:nth-child(2) {
+    background-color: white;
+}
+
+
+/* =========================
+   CARD 2
+========================= */
+
+.cric .cards:nth-child(2) .circle:nth-child(1) {
+    background-color: black;
+}
+
+.cric .cards:nth-child(2) .circle:nth-child(2) {
+    background-color: red;
+}
+
+
+/* =========================
+   CARD 3
+========================= */
+
+.cric .cards:nth-child(3) .circle:nth-child(1) {
+    background-color: white;
+}
+
+.cric .cards:nth-child(3) .circle:nth-child(2) {
+    background-color: blue;
+}
+
+
+/* =========================
+   CARD 4
+========================= */
+
+.cric .cards:nth-child(4) .circle:nth-child(1) {
+    background-color: black;
+}
+
+.cric .cards:nth-child(4) .circle:nth-child(2) {
+    background-color: green;
+}
+
+
+/* =========================
+   CARD 5
+========================= */
+
+.cric .cards:nth-child(5) .circle:nth-child(1) {
+    background-color: orange;
+}
+
+.cric .cards:nth-child(5) .circle:nth-child(2) {
+    background-color: white;
+}
+
+
+/* =========================
+   CARD 6
+========================= */
+
+.cric .cards:nth-child(6) .circle:nth-child(1) {
+    background-color: gray;
+}
+
+.cric .cards:nth-child(6) .circle:nth-child(2) {
+    background-color: black;
+}
+
+
+/* =========================
+   CARD 7
+========================= */
+
+.cric .cards:nth-child(7) .circle:nth-child(1) {
+    background-color: brown;
+}
+
+.cric .cards:nth-child(7) .circle:nth-child(2) {
+    background-color: white;
+}
+
+
+/* SMALL BOX */
+/* COMMON SMALL BOX */
+
+.small-box {
+    
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    background-color:#E7E7E7;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+    font-weight: bold;
+    
+}
+
+
+/* ODD CARDS
+   Card 1, 3, 5, 7 */
+
+.cric .cards:nth-child(odd) .small-box {
+    margin-left: 120px;
+    width: 150px;
+    height: 40px;
+}
+
+
+/* EVEN CARDS
+   Card 2, 4, 6 */
+
+.cric .cards:nth-child(even) .small-box {
+    margin-left: 230px;
+    width: 40px;
+    height: 40px;
+    
+    transition: all 0.3s ease;
+}
+
+
+/* TEXT HIDDEN INITIALLY */
+
+.cric .cards:nth-child(even) .small-box span {
+    opacity: 0;
+}
+
+
+/* HOVER ONLY ON EVEN CARDS */
+
+.cric .cards:nth-child(even) .small-box:hover {
+    margin-left: 120px;
+    width: 140px;
+    height: 40px;
+
+    background-color: black;
+    color: white;
+}
+
+
+/* SHOW TEXT ON HOVER */
+
+.cric .cards:nth-child(even) .small-box:hover span {
+    opacity: 1;
+}
+
+
+/* HIDE BAG ICON ON HOVER */
+
+.cric .cards:nth-child(even) .small-box i {
+    margin-left:  25px;
+}
+
+
+/* SMALL BOX HOVER */
+
+/* .small-box:hover {
+    background-color: black;
+
+    color: white;
+} */
+
+/* 
+/* =========================
+   CARD 1 IMAGE
+========================= */
+
+.cric .cards:nth-child(1) .bg {
+    background-image:
+        url("../images/cric_coll/1.1.webp");
+}
+
+
+/* =========================
+   CARD 2 IMAGE
+========================= */
+
+.cric .cards:nth-child(2) .bg {
+    background-image:
+        url("../images/cric_coll/2.webp");
+}
+
+
+/* =========================
+   CARD 3 IMAGE
+========================= */
+
+.cric .cards:nth-child(3) .bg {
+    background-image:
+        url("../images/cric_coll/3.webp");
+}
+
+
+/* =========================
+   CARD 4 IMAGE
+========================= */
+
+.cric .cards:nth-child(4) .bg {
+    background-image:
+        url("../images/cric_coll/4.webp");
+}
+
+
+/* =========================
+   CARD 5 IMAGE
+========================= */
+
+.cric .cards:nth-child(5) .bg {
+    background-image:
+        url("../images/cric_coll/5.webp");
+}
+
+
+/* =========================
+   CARD 6 IMAGE
+========================= */
+
+.cric .cards:nth-child(6) .bg {
+    background-image:
+        url("../images/cric_coll/4.1.webp");
+}
+
+
+/* =========================
+   CARD 7 IMAGE
+========================= */
+
+.cric .cards:nth-child(7) .bg {
+    background-image:
+        url("../images/cric_coll/4.webp");
+}

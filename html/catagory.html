@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Editorial Card Template</title>
+
+<style>
+
+:root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: #ffffff;
+}
+
+
+/* CARDS */
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    height: 2000px;
+    margin: 0;
+    padding: 20px;
+    border: 2px solid green;
+}
+
+
+/* CARD */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 800px;
+    background: #ffffff;
+    border: 2px solid black;
+    margin-top: 100px;
+}
+
+
+/* IMAGE AREA */
+
+.image-area {
+    display: flex;
+    width: 100%;
+    height: 570px;
+
+    transition: transform 0.3s ease;
+
+    /* Keep bottom fixed while scaling */
+    transform-origin: bottom center;
+}
+
+
+/* IMAGE AREA HOVER */
+
+.card:hover .image-area {
+    transform: scale(1.4);
+}
+
+
+/* IMAGE */
+
+.image {
+    position: relative;
+    flex: 1;
+    height: 630px;
+    overflow: hidden;
+    border: 2px solid gray;
+}
+
+.image img {
+    margin-top: 50px;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* TOP */
+
+.top {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+
+/* TOP 1 */
+
+.top1 {
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+
+/* TOP 2 */
+
+.top2 {
+    top: 50px;
+}
+
+
+/* SIDE */
+
+.side {
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 0px;
+    border: 2px solid blue;
+    margin-top: 50px;
+}
+
+
+/* TAG */
+
+.tag {
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 365px;
+    padding: 0;
+    margin-top: 40px;
+}
+
+
+/* TITLE */
+
+.title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding-top: 1px;
+    margin: 0;
+    width: 10px;
+}
+
+
+/* BOTTOM CONTENT */
+
+.content {
+    margin-top: 60px;
+    width: 100%;
+    height: 350px;
+    padding: 20px 5px;
+    border-top: 2px solid black;
+
+    /* Keep content fixed */
+    position: relative;
+    z-index: 2;
+}
+
+
+/* H3 */
+
+.content h3 {
+    margin: 0 0 10px 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+/* P */
+
+.content p {
+    line-height: 1.6;
+    color: #555555;
+    font-weight: bold;
+}
+
+
+/* ONE BUTTON */
+
+.content a {
+    text-decoration: none;
+}
+
+.content button {
+    padding: 15px 25px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.content button:hover {
+    background: white;
+    color: black;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<section>
+<div class="cards">
+
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+
+        <!-- IMAGE AREA -->
+
+        <div class="image-area">
+
+            <div class="image">
+
+                <div class="top top1">
+
+                    <div class="tag">
+                        00. // MENS WEAR
+                    </div>
+
+                </div>
+
+
+                <img src="../images/mens1.webp"
+                     alt="Mens wear 00">
+
+
+                <div class="top top2">
+                </div>
+
+            </div>
+
+
+            <div class="side">
+
+                <div class="title">
+                    ENGINEERED FOR COMFORT
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM CONTENT -->
+
+        <div class="content">
+
+            <h3>
+                Menswear
+            </h3>
+
+            <p>
+                Movement in every form
+            </p>
+
+            <a href="#">
+                <button>
+                    Shop now
+                </button>
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+
+        <!-- IMAGE AREA -->
+
+        <div class="image-area">
+
+            <div class="image">
+
+                <div class="top top1">
+
+                    <div class="tag">
+                        01. // WOMENS WEAR
+                    </div>
+
+                </div>
+
+
+                <img src="../images/womens1.webp"
+                     alt="Womens wear 01">
+
+
+                <div class="top top2">
+                </div>
+
+            </div>
+
+
+            <div class="side">
+
+                <div class="title">
+                    BUILT FOR MOVEMENT
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM CONTENT -->
+
+        <div class="content">
+
+            <h3>
+                Womenswear
+            </h3>
+
+            <p>
+                For the everyday athlete
+            </p>
+
+            <a href="#">
+                <button>
+                    Shop now
+                </button>
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+</section>
+
+
+</body>
+
+</html>
