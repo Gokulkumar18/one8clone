@@ -6,15 +6,10 @@
     box-sizing: border-box;
 }
 
-
 html,
 body {
     width: 100%;
     height: auto;
-}
-
-
-body {
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -60,7 +55,6 @@ body {
     z-index: 1000;
 
     transition: 0.3s ease;
-    /* border: 2px solid black; */
 }
 
 
@@ -70,8 +64,6 @@ body {
 
 .header:hover {
     background-color: white;
-
-    border-bottom: 2px solid black;
 }
 
 
@@ -121,7 +113,6 @@ body {
 ========================================================= */
 
 .logo {
-    /* border: 0px solid black;  */
     order: 2;
 
     width: 10%;
@@ -131,7 +122,7 @@ body {
     justify-content: center;
 
     margin-left: 200px;
-    /* text-decoration: none; */
+
     margin-top: 5px;
 }
 
@@ -141,6 +132,7 @@ body {
 
     align-items: center;
     justify-content: center;
+
     text-decoration: none;
 }
 
@@ -148,18 +140,20 @@ body {
 .logo .img {
     width: 50px;
     height: 60px;
-    background: url(../images/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* display: block; */
-   color: white;
-    object-fit: cover;
-    /* border: 2px solid black; */
+
     margin-bottom: 35px;
 
+    background-image: url(../images/one8_logo_white.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
+
+.logo .img:hover {
+    background-image: url(../images/one8logoblack.png);
+}
 
 /* =========================================================
    PART 3
@@ -169,7 +163,6 @@ body {
 .search-box {
     order: 3;
 
-    width: 30%;
     width: 300px;
 
     margin-left: auto;
@@ -278,22 +271,42 @@ body {
 
 
 /* =========================================================
+   SEARCH HOVER
+========================================================= */
+
+.search-box:hover {
+    background-color: white;
+
+    border-color: black;
+}
+
+
+/* =========================================================
+   SEARCH HOVER TEXT + ICON
+========================================================= */
+
+.search-box:hover input {
+    color: black;
+}
+
+.search-box:hover button {
+    color: black;
+}
+
+.search-box:hover::after {
+    color: black;
+}
+
+
+/* =========================================================
    SEARCH ANIMATION
 ========================================================= */
-@keyframes searchText {
 
-    /* =====================================================
-       START
-    ===================================================== */
+@keyframes searchText {
 
     0% {
         content: "Search for";
     }
-
-
-    /* =====================================================
-       SNEAKERS - TYPE
-    ===================================================== */
 
     2% {
         content: "Search for S";
@@ -327,11 +340,6 @@ body {
         content: "Search for Sneakers";
     }
 
-
-    /* =====================================================
-       SNEAKERS - DELETE
-    ===================================================== */
-
     10% {
         content: "Search for Sneaker";
     }
@@ -363,11 +371,6 @@ body {
     17% {
         content: "Search for";
     }
-
-
-    /* =====================================================
-       CRICKET SHOES - TYPE
-    ===================================================== */
 
     18% {
         content: "Search for C";
@@ -421,11 +424,6 @@ body {
         content: "Search for Cricket Shoes";
     }
 
-
-    /* =====================================================
-       CRICKET SHOES - DELETE
-    ===================================================== */
-
     31% {
         content: "Search for Cricket Shoe";
     }
@@ -477,11 +475,6 @@ body {
     43% {
         content: "Search for";
     }
-
-
-    /* =====================================================
-       RUNNING SHOES - TYPE
-    ===================================================== */
 
     44% {
         content: "Search for R";
@@ -535,11 +528,6 @@ body {
         content: "Search for Running Shoes";
     }
 
-
-    /* =====================================================
-       RUNNING SHOES - DELETE
-    ===================================================== */
-
     57% {
         content: "Search for Running Shoe";
     }
@@ -592,11 +580,6 @@ body {
         content: "Search for";
     }
 
-
-    /* =====================================================
-       TSHIRTS - TYPE
-    ===================================================== */
-
     70% {
         content: "Search for T";
     }
@@ -624,11 +607,6 @@ body {
     76% {
         content: "Search for Tshirts";
     }
-
-
-    /* =====================================================
-       TSHIRTS - DELETE
-    ===================================================== */
 
     77% {
         content: "Search for Tshirt";
@@ -658,11 +636,6 @@ body {
         content: "Search for";
     }
 
-
-    /* =====================================================
-       JACKETS - TYPE
-    ===================================================== */
-
     84% {
         content: "Search for J";
     }
@@ -690,11 +663,6 @@ body {
     90% {
         content: "Search for Jackets";
     }
-
-
-    /* =====================================================
-       JACKETS - DELETE
-    ===================================================== */
 
     91% {
         content: "Search for Jacket";
@@ -724,16 +692,11 @@ body {
         content: "Search for";
     }
 
-
-    /* =====================================================
-       END / RESTART
-    ===================================================== */
-
     100% {
         content: "Search for";
     }
-
 }
+
 
 /* =========================================================
    HEADER ICONS
@@ -792,10 +755,38 @@ body {
     padding: 0;
 
     cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
 }
 
 
 .header:hover .hamburger {
+    color: black;
+}
+
+
+/* =========================================================
+   MOBILE SEARCH ICON
+========================================================= */
+
+.mobile-search {
+    display: none;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+
+.header:hover .mobile-search {
     color: black;
 }
 
@@ -854,9 +845,6 @@ body {
     text-align: left;
 
     max-width: 550px;
-
-    /* text-shadow:
-        0 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 
@@ -884,7 +872,9 @@ body {
 
 .carousel-details p {
     font-size: 17px;
-    font-weight:500;
+
+    font-weight: 500;
+
     margin-bottom: 25px;
 }
 
@@ -1003,68 +993,233 @@ body {
 }
 
 
-
 /* =========================================================
-   RESPONSIVE MEDIA QUERY
-========================================================= */
+   TABLET + MOBILE HEADER
+   991px and below
 
-
-/* =========================================================
-   TABLET
-   768px - 991px
+   ☰  🔍              ONE8              👤  🛍
 ========================================================= */
 
 @media (max-width: 991px) {
 
+    /* =========================
+       HEADER
+    ========================= */
+
+    .header {
+        height: 80px;
+
+        padding: 10px 30px;
+
+        display: flex;
+
+        align-items: center;
+    }
+
+
+    /* =========================
+       HIDE DESKTOP MENU
+    ========================= */
+
+    .desktop-menu {
+        display: none;
+    }
+
+
+    /* =========================
+       HIDE DESKTOP SEARCH
+    ========================= */
+
+    .search-box {
+        display: none;
+    }
+
+
+    /* =========================
+       HAMBURGER
+    ========================= */
+
+    .hamburger {
+        display: flex;
+
+        order: 1;
+
+        color: white;
+
+        font-size: 25px;
+
+        padding: 0;
+
+        margin: 0;
+    }
+
+
+    /* =========================
+       MOBILE SEARCH
+    ========================= */
+
+    .mobile-search {
+        display: flex;
+
+        order: 2;
+
+        margin-left: 15px;
+
+        color: white;
+    }
+
+
+    /* =========================
+       LOGO
+    ========================= */
+
+    .logo {
+        order: 3;
+
+        width: auto;
+
+        flex: 1;
+
+        margin-left: 0;
+
+        margin-top: 0;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .logo .img {
+        width: 45px;
+
+        height: 55px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* =========================
+       RIGHT ICONS
+       PERSON + BAG ONLY
+    ========================= */
+
+    .header-icons {
+        order: 4;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-end;
+
+        gap: 15px;
+
+        margin-left: 0;
+    }
+
+
+    .header-icons a {
+        color: white;
+
+        font-size: 19px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* HIDE HEART */
+
+    .header-icons a:first-child {
+        display: none;
+    }
+
+
+    /* =========================
+       HEADER HOVER
+    ========================= */
+
+    .header:hover .hamburger,
+    .header:hover .mobile-search,
+    .header:hover .header-icons a {
+        color: black;
+    }
+
+
+    /* =========================
+       CAROUSEL
+    ========================= */
+
     .carousel-details {
         left: 20px;
+
         bottom: 35px;
+
         max-width: 500px;
     }
+
 
     .carousel-details h1 {
         font-size: 40px;
     }
 
+
     .carousel-details h2 {
         font-size: 30px;
     }
 
+
     .carousel-details p {
         font-size: 16px;
+
         margin-bottom: 20px;
     }
 
+
     .shop-btn {
         padding: 14px 28px;
+
         font-size: 14px;
     }
+
 
     .carousel-indicators {
         margin-bottom: 20px;
     }
 
+
     .carousel-indicators button {
         width: 27px;
+
         height: 3px;
+
         margin: 0 3px;
     }
+
 
     .carousel-control-prev,
     .carousel-control-next {
         width: 10%;
     }
 
+
     .offcanvas-header {
         padding: 18px;
     }
+
 
     .offcanvas-title {
         font-size: 21px;
     }
 
+
     .offcanvas-body a {
         padding: 17px 20px;
+
         font-size: 16px;
     }
 }
@@ -1077,63 +1232,131 @@ body {
 
 @media (max-width: 767px) {
 
+    /* =========================
+       HEADER
+    ========================= */
+
+    .header {
+        height: 70px;
+
+        padding: 8px 20px;
+    }
+
+
+    .hamburger {
+        font-size: 24px;
+    }
+
+
+    .mobile-search {
+        font-size: 20px;
+
+        margin-left: 14px;
+    }
+
+
+    .logo .img {
+        width: 42px;
+
+        height: 50px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .header-icons {
+        gap: 14px;
+    }
+
+
+    .header-icons a {
+        font-size: 18px;
+    }
+
+
+    /* =========================
+       CAROUSEL
+    ========================= */
+
     .carousel-details {
         left: 20px;
+
         bottom: 60px;
+
         max-width: calc(100% - 40px);
     }
 
+
     .carousel-details h1 {
         font-size: 32px;
+
         letter-spacing: 1px;
     }
 
+
     .carousel-details h2 {
         font-size: 25px;
+
         letter-spacing: 0.5px;
+
         margin-bottom: 10px;
     }
 
+
     .carousel-details p {
         font-size: 14px;
+
         line-height: 1.5;
+
         margin-bottom: 18px;
     }
 
+
     .shop-btn {
         padding: 12px 24px;
+
         font-size: 13px;
     }
+
 
     .carousel-indicators {
         margin-bottom: 15px;
     }
 
+
     .carousel-indicators button {
         width: 22px;
+
         height: 2px;
+
         margin: 0 3px;
     }
+
 
     .carousel-control-prev,
     .carousel-control-next {
         width: 12%;
     }
 
+
     .offcanvas {
         width: 300px !important;
     }
+
 
     .offcanvas-header {
         padding: 16px;
     }
 
+
     .offcanvas-title {
         font-size: 20px;
     }
 
+
     .offcanvas-body a {
         padding: 15px 18px;
+
         font-size: 15px;
     }
 }
@@ -1146,65 +1369,135 @@ body {
 
 @media (max-width: 575px) {
 
+    /* =========================
+       HEADER
+    ========================= */
+
+    .header {
+        height: 65px;
+
+        padding: 8px 15px;
+    }
+
+
+    .hamburger {
+        font-size: 23px;
+    }
+
+
+    .mobile-search {
+        font-size: 19px;
+
+        margin-left: 11px;
+    }
+
+
+    .logo .img {
+        width: 38px;
+
+        height: 46px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .header-icons {
+        gap: 10px;
+    }
+
+
+    .header-icons a {
+        font-size: 17px;
+    }
+
+
+    /* =========================
+       CAROUSEL
+    ========================= */
+
     .carousel-details {
         left: 15px;
+
         bottom: 55px;
+
         max-width: calc(100% - 30px);
     }
 
+
     .carousel-details h1 {
         font-size: 27px;
+
         letter-spacing: 0.5px;
+
         line-height: 1.2;
     }
+
 
     .carousel-details h2 {
         font-size: 21px;
+
         line-height: 1.2;
+
         margin-bottom: 8px;
     }
 
+
     .carousel-details p {
         font-size: 13px;
+
         line-height: 1.4;
+
         margin-bottom: 15px;
     }
 
+
     .shop-btn {
         padding: 11px 22px;
+
         font-size: 12px;
+
         border-radius: 25px;
     }
+
 
     .carousel-indicators {
         margin-bottom: 12px;
     }
 
+
     .carousel-indicators button {
         width: 18px;
+
         height: 2px;
+
         margin: 0 2px;
     }
+
 
     .carousel-control-prev,
     .carousel-control-next {
         width: 10%;
     }
 
+
     .offcanvas {
         width: 85% !important;
     }
+
 
     .offcanvas-header {
         padding: 15px;
     }
 
+
     .offcanvas-title {
         font-size: 19px;
     }
 
+
     .offcanvas-body a {
         padding: 14px 18px;
+
         font-size: 14px;
     }
 }
@@ -1217,41 +1510,96 @@ body {
 
 @media (max-width: 400px) {
 
+    /* =========================
+       HEADER
+    ========================= */
+
+    .header {
+        height: 60px;
+
+        padding: 8px 12px;
+    }
+
+
+    .hamburger {
+        font-size: 21px;
+    }
+
+
+    .mobile-search {
+        font-size: 18px;
+
+        margin-left: 9px;
+    }
+
+
+    .logo .img {
+        width: 35px;
+
+        height: 42px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .header-icons {
+        gap: 8px;
+    }
+
+
+    .header-icons a {
+        font-size: 16px;
+    }
+
+
+    /* =========================
+       CAROUSEL
+    ========================= */
+
     .carousel-details {
         left: 12px;
+
         bottom: 50px;
+
         max-width: calc(100% - 24px);
     }
+
 
     .carousel-details h1 {
         font-size: 24px;
     }
 
+
     .carousel-details h2 {
         font-size: 19px;
     }
 
+
     .carousel-details p {
         font-size: 12px;
+
         margin-bottom: 12px;
     }
 
+
     .shop-btn {
         padding: 10px 19px;
+
         font-size: 11px;
     }
 
+
     .carousel-indicators button {
         width: 16px;
+
         margin: 0 2px;
     }
+
 
     .offcanvas {
         width: 90% !important;
     }
 }
-
-
 
 
 
@@ -4357,7 +4705,7 @@ body {
 
 .virat_img1 {
     background-image:
-        url("../images/elevate_yr_evrdy/footwear1.webp");
+        url("../images/vk_picks/vk_picks1.png");
 }
 
 
@@ -4367,7 +4715,7 @@ body {
 
 .virat_img2 {
     background-image:
-        url("../images/elevate_yr_evrdy/clothing.webp");
+          url("../images/vk_picks/vk_picks2.png");
 }
 
 
@@ -4377,7 +4725,7 @@ body {
 
 .virat_img3 {
     background-image:
-        url("../images/elevate_yr_evrdy/caps.webp");
+          url("../images/vk_picks/vk_picks3.png");
 }
 
 
@@ -4387,7 +4735,7 @@ body {
 
 .virat_img4 {
     background-image:
-        url("../images/elevate_yr_evrdy/footwear.jpg");
+         url("../images/vk_picks/vk_picks4.png");
 }
 
 
@@ -8489,13 +8837,11 @@ body {
 }
 
 
-
-
 /* =========================================================
    FOOTER
 ========================================================= */
 
-.foot {
+.footer {
     background: #141414;
     overflow: hidden;
     margin-top: 50px;
@@ -8506,7 +8852,7 @@ body {
    NEWSLETTER
 ========================================================= */
 
-.news h2 {
+.footer .newsletter h2 {
     font-size: 35px;
     font-weight: 900;
     margin-top: 10px;
@@ -8514,12 +8860,11 @@ body {
     color: white;
 }
 
-
-.news p {
+.footer .newsletter p {
     color: white;
     font-size: 18px;
     margin-bottom: 24px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 
@@ -8527,7 +8872,7 @@ body {
    EMAIL
 ========================================================= */
 
-.email {
+.footer .email-form {
     margin-top: 80px;
     width: 100%;
     display: flex;
@@ -8540,7 +8885,7 @@ body {
    EMAIL INPUT BOX
 ========================================================= */
 
-.input-box {
+.footer .email-input-box {
     flex: 1;
     background: transparent;
     padding: 0 20px;
@@ -8549,10 +8894,10 @@ body {
     align-items: center;
 }
 
-
-.input {
+.footer .email-input {
     width: 100%;
     background: transparent;
+    border: none;
     border-bottom: 1px solid white;
     outline: none;
     box-shadow: none;
@@ -8562,17 +8907,15 @@ body {
     padding: 8px 0;
 }
 
-
-.input:focus {
+.footer .email-input:focus {
     border: 2px solid white;
-    outline: none !important;
+    outline: none;
     font-weight: 400;
-    box-shadow: none !important;
+    box-shadow: none;
     background: transparent;
 }
 
-
-.input::placeholder {
+.footer .email-input::placeholder {
     color: white;
     opacity: 1;
 }
@@ -8582,9 +8925,9 @@ body {
    BUTTON
 ========================================================= */
 
-.btnn {
+.footer .subscribe-button {
     width: 240px;
-    height: 10px;
+    height: 50px;
     margin-bottom: 30px;
     background: #25e8e0;
     border: 1px solid #25e8e0;
@@ -8592,12 +8935,10 @@ body {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
-    /* flex-shrink: 0; */
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
-
-.btnn:hover {
+.footer .subscribe-button:hover {
     opacity: 0.9;
 }
 
@@ -8606,12 +8947,11 @@ body {
    MOBILE LOGO
 ========================================================= */
 
-.logo {
+.footer .mobile-logo {
     border-top: 1px solid #2b2b2b;
 }
 
-
-.logo img {
+.footer .mobile-logo img {
     width: 100px;
     height: auto;
     display: block;
@@ -8622,14 +8962,13 @@ body {
    MOBILE ACCORDION
 ========================================================= */
 
-.accordion-item {
+.footer .accordion-item {
     background: transparent;
     border: none;
     border-bottom: 1px solid #2b2b2b;
 }
 
-
-.accordion-button {
+.footer .accordion-button {
     background: transparent;
     color: white;
     font-weight: 700;
@@ -8638,21 +8977,18 @@ body {
     box-shadow: none;
 }
 
-
-.accordion-button:not(.collapsed) {
+.footer .accordion-button:not(.collapsed) {
     background: transparent;
     color: white;
     box-shadow: none;
 }
 
-
-.accordion-button::after {
+.footer .accordion-button::after {
     filter: invert(1);
     transform: scale(0.85);
 }
 
-
-.accordion-body {
+.footer .accordion-body {
     padding: 0 0 18px;
 }
 
@@ -8661,46 +8997,61 @@ body {
    LINKS
 ========================================================= */
 
-.links a,
-.desk a,
-.follow a {
+.footer .footer-links a,
+.footer .desktop-menu a,
+.footer .follow-section a {
     color: #b9b9b9;
-
     text-decoration: none;
-
-    font-size: 15px;
-
+    font-size: 14px;
     display: block;
-
     padding: 6px 0;
 }
 
-
-.links a:hover,
-.desk a:hover {
+.footer .footer-links a:hover,
+.footer .desktop-menu a:hover {
     color: white;
 }
 
 
 /* =========================================================
-   DESKTOP
+   FOOTER DESKTOP MENU
 ========================================================= */
 
-.desk {
+.footer .desktop-menu {
     border-top: 1px solid white;
-
     border-bottom: 1px solid white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+/* =========================================================
+   ONE CONTAINER - FIVE MENU SECTIONS
+========================================================= */
+
+.footer .menu-links {
+    flex: 1;
+    display: grid;
 
     grid-template-columns:
         1fr
         1fr
         1.4fr
         1fr
-        1.2fr
         1.2fr;
- margin: 0px;
- padding: 0px;
-    /* gap: 30px; */
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   MENU COLUMN
+========================================================= */
+
+.footer .menu-column {
+    min-width: 0;
 }
 
 
@@ -8708,15 +9059,13 @@ body {
    TITLE
 ========================================================= */
 
-.title {
+.footer .menu-title {
     font-size: 18px;
     font-weight: 700;
     color: white;
-    /* margin-bottom: 16px; */
 }
 
-
-.title a {
+.footer .menu-title a {
     font-size: 12px;
     color: #f79e1b;
 }
@@ -8726,18 +9075,13 @@ body {
    FOLLOW
 ========================================================= */
 
-.follow {
-    /* border-color: #2b2b2b !important; */
-   border-left: 2px solid white;
+.footer .follow-section {
+    border-left: 2px solid white;
     padding-left: 20px;
-   /* border: 2px solid white; */
-  
-   /* margin: 80px 0px 80px 0px; */
-
+    flex: 0 0 22%;
 }
 
-
-.follow-text {
+.footer .follow-description {
     color: #b9b9b9;
     font-size: 14px;
     margin-top: -5px;
@@ -8749,39 +9093,28 @@ body {
    SOCIAL
 ========================================================= */
 
-.social {
+.footer .social-icons {
     display: flex;
     gap: 10px;
-    
 }
 
-
-.social a {
+.footer .social-icons a {
     width: 36px;
     height: 36px;
-
     border-radius: 50%;
-
     background: white;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     text-decoration: none;
-
     transition: 0.2s;
 }
 
-
-.social a:hover {
+.footer .social-icons a:hover {
     transform: scale(1.08);
 }
 
-
-.social svg {
+.footer .social-icons svg {
     width: 16px;
     height: 16px;
     fill: #0d0d0d;
@@ -8792,17 +9125,11 @@ body {
    COPYRIGHT + PAYMENT
 ========================================================= */
 
-.legal {
+.footer .footer-bottom {
     display: flex;
-
     align-items: center;
-
     justify-content: flex-start;
-
-    /* gap: 20px; */
-
-    /* padding: 25px 0; */
-
+    gap: 20px;
     border-top: 1px solid #2b2b2b;
 }
 
@@ -8811,11 +9138,9 @@ body {
    COPYRIGHT
 ========================================================= */
 
-.copyright {
+.footer .copyright-text {
     color: #b9b9b9;
-
     font-size: 14px;
-
     white-space: nowrap;
 }
 
@@ -8824,13 +9149,10 @@ body {
    PAYMENT
 ========================================================= */
 
-.payment {
+.footer .payment-methods {
     display: flex;
-
     align-items: center;
-
     gap: 8px;
-
     flex-wrap: nowrap;
 }
 
@@ -8839,25 +9161,16 @@ body {
    PAYMENT ICON
 ========================================================= */
 
-.card-icon {
+.footer .payment-card {
     width: 48px;
-
     height: 28px;
-
     border-radius: 4px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     font-size: 8px;
-
     font-weight: 900;
-
     color: white;
-
     white-space: nowrap;
 }
 
@@ -8866,7 +9179,7 @@ body {
    AMEX
 ========================================================= */
 
-.amex {
+.footer .amex-card {
     background: #1677c8;
 }
 
@@ -8875,7 +9188,7 @@ body {
    DINERS
 ========================================================= */
 
-.diners {
+.footer .diners-card {
     background: #222;
 }
 
@@ -8884,21 +9197,17 @@ body {
    MAESTRO
 ========================================================= */
 
-.maestro {
+.footer .maestro-card {
     background: white;
-
     color: #111;
-
     gap: 0;
 }
 
-
-.maestro b:first-child {
+.footer .maestro-card b:first-child {
     color: #eb001b;
 }
 
-
-.maestro b:last-child {
+.footer .maestro-card b:last-child {
     color: #f79e1b;
 }
 
@@ -8907,21 +9216,17 @@ body {
    MASTERCARD
 ========================================================= */
 
-.mastercard {
+.footer .mastercard-card {
     background: white;
-
     color: #111;
-
     gap: 0;
 }
 
-
-.mastercard b:first-child {
+.footer .mastercard-card b:first-child {
     color: #eb001b;
 }
 
-
-.mastercard b:last-child {
+.footer .mastercard-card b:last-child {
     color: #f79e1b;
 }
 
@@ -8930,11 +9235,9 @@ body {
    RUPAY
 ========================================================= */
 
-.rupay {
+.footer .rupay-card {
     background: #111;
-
     color: white;
-
     border: 1px solid #555;
 }
 
@@ -8943,7 +9246,7 @@ body {
    VISA
 ========================================================= */
 
-.visa {
+.footer .visa-card {
     background: #1a1f71;
 }
 
@@ -8952,28 +9255,17 @@ body {
    WATERMARK
 ========================================================= */
 
-.watermark {
+.footer .footer-watermark {
     text-align: center;
-
     font-weight: 900;
-
-    font-size:  420px;
-
+    font-size: 420px;
     line-height: 0.9;
-
     letter-spacing: -2px;
-
     color: #1c1c1c;
-
     padding: 40px 0 0;
-
     user-select: none;
     margin-bottom: 80px;
 }
-
-/* =========================================================
-   FOOTER RESPONSIVE
-========================================================= */
 
 
 /* =========================================================
@@ -8982,116 +9274,98 @@ body {
 
 @media (min-width: 1400px) {
 
-    .foot {
+    .footer {
         margin-top: 50px;
     }
 
-    .news h2 {
+    .footer .newsletter h2 {
         font-size: 35px;
     }
 
-    .news p {
+    .footer .newsletter p {
         font-size: 17px;
     }
 
-    .email {
+    .footer .email-form {
         width: 100%;
-
         display: flex;
-
         flex-direction: row;
-
         align-items: center;
-
         gap: 20px;
-
         margin-top: 80px;
-
         margin-bottom: 0;
     }
 
-    .input-box {
+    .footer .email-input-box {
         width: auto;
-
         flex: 1;
-
         height: 70px;
-
         padding: 0 20px;
     }
 
-    .input {
+    .footer .email-input {
         font-size: 30px;
     }
 
-    .btnn {
+    .footer .subscribe-button {
         width: 220px;
-
         height: 70px;
-
         font-size: 18px;
     }
 
-    .desk {
+    .footer .menu-links {
         gap: 30px;
     }
 
-    .desk a,
-    .links a {
+    .footer .desktop-menu a,
+    .footer .footer-links a {
         font-size: 15px;
     }
 
-    .title {
+    .footer .menu-title {
         font-size: 18px;
-
         margin-bottom: 16px;
     }
 
-    .follow-text {
+    .footer .follow-description {
         font-size: 14px;
     }
 
-    .social {
+    .footer .social-icons {
         gap: 10px;
     }
 
-    .social a {
+    .footer .social-icons a {
         width: 36px;
-
         height: 36px;
     }
 
-    .social svg {
+    .footer .social-icons svg {
         width: 16px;
-
         height: 16px;
     }
 
-    .legal {
+    .footer .footer-bottom {
         gap: 20px;
-
         padding: 25px 0;
     }
 
-    .copyright {
+    .footer .copyright-text {
         font-size: 14px;
     }
 
-    .payment {
+    .footer .payment-methods {
         gap: 8px;
     }
 
-    .card-icon {
+    .footer .payment-card {
         width: 48px;
-
         height: 28px;
-
         font-size: 8px;
     }
 
-    .watermark {
+    .footer .footer-watermark {
         font-size: 18vw;
-
         padding: 40px 0 0;
     }
 }
@@ -9103,112 +9377,96 @@ body {
 
 @media (min-width: 1200px) and (max-width: 1399px) {
 
-    .foot {
+    .footer {
         margin-top: 45px;
     }
 
-    .news h2 {
+    .footer .newsletter h2 {
         font-size: 33px;
     }
 
-    .news p {
+    .footer .newsletter p {
         font-size: 16px;
     }
 
-    .email {
+    .footer .email-form {
         width: 100%;
-
         display: flex;
-
         flex-direction: row;
-
         align-items: center;
-
         gap: 20px;
-
         margin-top: 70px;
-
         margin-bottom: 0;
     }
 
-    .input-box {
+    .footer .email-input-box {
         flex: 1;
-
         height: 65px;
-
         padding: 0 18px;
     }
 
-    .input {
+    .footer .email-input {
         font-size: 28px;
     }
 
-    .btnn {
+    .footer .subscribe-button {
         width: 200px;
-
         height: 65px;
-
         font-size: 17px;
     }
 
-    .desk {
+    .footer .menu-links {
         gap: 20px;
     }
 
-    .desk a,
-    .links a {
+    .footer .desktop-menu a,
+    .footer .footer-links a {
         font-size: 15px;
     }
 
-    .title {
+    .footer .menu-title {
         font-size: 17px;
-
         margin-bottom: 15px;
     }
 
-    .follow-text {
+    .footer .follow-description {
         font-size: 14px;
     }
 
-    .social {
+    .footer .social-icons {
         gap: 9px;
     }
 
-    .social a {
+    .footer .social-icons a {
         width: 35px;
-
         height: 35px;
     }
 
-    .social svg {
+    .footer .social-icons svg {
         width: 15px;
-
         height: 15px;
     }
 
-    .legal {
+    .footer .footer-bottom {
         gap: 18px;
-
         padding: 23px 0;
     }
 
-    .copyright {
+    .footer .copyright-text {
         font-size: 14px;
     }
 
-    .payment {
+    .footer .payment-methods {
         gap: 7px;
     }
 
-    .card-icon {
+    .footer .payment-card {
         width: 46px;
-
         height: 27px;
-
         font-size: 8px;
     }
 
-    .watermark {
+    .footer .footer-watermark {
         font-size: 19vw;
     }
 }
@@ -9220,112 +9478,96 @@ body {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    .foot {
+    .footer {
         margin-top: 40px;
     }
 
-    .news h2 {
+    .footer .newsletter h2 {
         font-size: 31px;
     }
 
-    .news p {
+    .footer .newsletter p {
         font-size: 16px;
     }
 
-    .email {
+    .footer .email-form {
         width: 100%;
-
         display: flex;
-
         flex-direction: row;
-
         align-items: center;
-
         gap: 18px;
-
         margin-top: 60px;
-
         margin-bottom: 0;
     }
 
-    .input-box {
+    .footer .email-input-box {
         flex: 1;
-
         height: 60px;
-
         padding: 0 16px;
     }
 
-    .input {
+    .footer .email-input {
         font-size: 26px;
     }
 
-    .btnn {
+    .footer .subscribe-button {
         width: 180px;
-
         height: 60px;
-
         font-size: 16px;
     }
 
-    .desk {
+    .footer .menu-links {
         gap: 15px;
     }
 
-    .desk a,
-    .links a {
+    .footer .desktop-menu a,
+    .footer .footer-links a {
         font-size: 15px;
     }
 
-    .title {
+    .footer .menu-title {
         font-size: 16px;
-
         margin-bottom: 14px;
     }
 
-    .follow-text {
+    .footer .follow-description {
         font-size: 13px;
     }
 
-    .social {
+    .footer .social-icons {
         gap: 8px;
     }
 
-    .social a {
+    .footer .social-icons a {
         width: 34px;
-
         height: 34px;
     }
 
-    .social svg {
+    .footer .social-icons svg {
         width: 15px;
-
         height: 15px;
     }
 
-    .legal {
+    .footer .footer-bottom {
         gap: 15px;
-
         padding: 22px 0;
     }
 
-    .copyright {
+    .footer .copyright-text {
         font-size: 13px;
     }
 
-    .payment {
+    .footer .payment-methods {
         gap: 6px;
     }
 
-    .card-icon {
+    .footer .payment-card {
         width: 45px;
-
         height: 27px;
-
         font-size: 8px;
     }
 
-    .watermark {
+    .footer .footer-watermark {
         font-size: 20vw;
     }
 }
@@ -9337,127 +9579,106 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .foot {
+    .footer {
         margin-top: 35px;
     }
 
-    .news h2 {
+    .footer .newsletter h2 {
         font-size: 28px;
     }
 
-    .news p {
+    .footer .newsletter p {
         font-size: 15px;
     }
 
-    /* EMAIL + BUTTON */
-
-    .email {
+    .footer .email-form {
         width: 100%;
-
         display: flex;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
+        flex-direction: row;
+        align-items: center;
         gap: 20px;
-
         margin-top: 50px;
-
         margin-bottom: 30px;
     }
 
-    .input-box {
-        width: 100%;
-
+    .footer .email-input-box {
+        flex: 1;
         height: 60px;
-
         padding: 0 16px;
     }
 
-    .input {
+    .footer .email-input {
         font-size: 25px;
     }
 
-    .btnn {
+    .footer .subscribe-button {
         width: 190px;
-
         height: 55px;
-
         font-size: 16px;
     }
 
-    /* DESKTOP MENU HIDDEN */
-
-    .desk {
-        display: none;
+    .footer .desktop-menu {
+        display: flex;
     }
 
-    /* ACCORDION */
+    .footer .menu-links {
+        grid-template-columns:
+            1fr
+            1fr
+            1.4fr
+            1fr
+            1fr;
 
-    .accordion-button {
-        font-size: 16px;
-
-        padding: 17px 0;
+        gap: 15px;
     }
 
-    .links a {
+    .footer .desktop-menu a,
+    .footer .footer-links a {
         font-size: 15px;
-
-        padding: 6px 0;
     }
 
-    /* FOLLOW */
+    .footer .menu-title {
+        font-size: 16px;
+    }
 
-    .follow-text {
+    .footer .follow-description {
         font-size: 13px;
     }
 
-    .social {
+    .footer .social-icons {
         gap: 8px;
     }
 
-    .social a {
+    .footer .social-icons a {
         width: 34px;
-
         height: 34px;
     }
 
-    .social svg {
+    .footer .social-icons svg {
         width: 15px;
-
         height: 15px;
     }
 
-    /* LEGAL */
-
-    .legal {
+    .footer .footer-bottom {
         gap: 15px;
-
         padding: 20px 0;
-
-        flex-wrap: wrap;
     }
 
-    .copyright {
+    .footer .copyright-text {
         font-size: 13px;
     }
 
-    .payment {
+    .footer .payment-methods {
         gap: 6px;
-
-        flex-wrap: wrap;
     }
 
-    .card-icon {
+    .footer .payment-card {
         width: 45px;
-
         height: 27px;
-
         font-size: 8px;
     }
 
-    .watermark {
+    .footer .footer-watermark {
         font-size: 22vw;
     }
 }
@@ -9469,137 +9690,105 @@ body {
 
 @media (min-width: 576px) and (max-width: 767px) {
 
-    .foot {
+    .footer {
         margin-top: 30px;
     }
 
-    .news h2 {
+    .footer .newsletter h2 {
         font-size: 27px;
     }
 
-    .news p {
+    .footer .newsletter p {
         font-size: 14px;
-
         line-height: 1.5;
     }
 
-    /* EMAIL + BUTTON */
-
-    .email {
+    .footer .email-form {
         width: 100%;
-
         display: flex;
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 20px;
-
         margin-top: 45px;
-
         margin-bottom: 30px;
     }
 
-    .input-box {
+    .footer .email-input-box {
         width: 100%;
-
         height: 60px;
-
         padding: 0 15px;
     }
 
-    .input {
+    .footer .email-input {
         font-size: 22px;
     }
 
-    .btnn {
+    .footer .subscribe-button {
         width: 180px;
-
         height: 52px;
-
         font-size: 15px;
     }
 
-    /* DESKTOP MENU */
-
-    .desk {
+    .footer .desktop-menu {
         display: none;
     }
 
-    /* ACCORDION */
-
-    .accordion-button {
+    .footer .accordion-button {
         font-size: 15px;
-
         padding: 16px 0;
     }
 
-    .accordion-body {
+    .footer .accordion-body {
         padding-bottom: 16px;
     }
 
-    .links a {
+    .footer .footer-links a {
         font-size: 15px;
-
         padding: 5px 0;
     }
 
-    /* FOLLOW */
-
-    .follow-text {
+    .footer .follow-description {
         font-size: 13px;
     }
 
-    .social {
+    .footer .social-icons {
         gap: 8px;
     }
 
-    .social a {
+    .footer .social-icons a {
         width: 34px;
-
         height: 34px;
     }
 
-    .social svg {
+    .footer .social-icons svg {
         width: 15px;
-
         height: 15px;
     }
 
-    /* LEGAL */
-
-    .legal {
+    .footer .footer-bottom {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 15px;
-
         padding: 20px 0;
     }
 
-    .copyright {
+    .footer .copyright-text {
         font-size: 13px;
     }
 
-    .payment {
+    .footer .payment-methods {
         flex-wrap: wrap;
-
         gap: 6px;
     }
 
-    .card-icon {
+    .footer .payment-card {
         width: 43px;
-
         height: 25px;
-
         font-size: 8px;
     }
 
-    .watermark {
+    .footer .footer-watermark {
         font-size: 23vw;
-
         padding-top: 35px;
     }
 }
@@ -9611,139 +9800,106 @@ body {
 
 @media (min-width: 400px) and (max-width: 575px) {
 
-    .foot {
+    .footer {
         margin-top: 25px;
     }
 
-    .news h2 {
+    .footer .newsletter h2 {
         font-size: 25px;
     }
 
-    .news p {
+    .footer .newsletter p {
         font-size: 14px;
-
         line-height: 1.5;
     }
 
-    /* EMAIL + BUTTON */
-
-    .email {
+    .footer .email-form {
         width: 100%;
-
         display: flex;
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 18px;
-
         margin-top: 35px;
-
         margin-bottom: 30px;
     }
 
-    .input-box {
+    .footer .email-input-box {
         width: 100%;
-
         height: 55px;
-
         padding: 0 15px;
     }
 
-    .input {
+    .footer .email-input {
         font-size: 20px;
     }
 
-    .btnn {
+    .footer .subscribe-button {
         width: 165px;
-
         height: 50px;
-
         font-size: 14px;
     }
 
-    /* DESKTOP MENU */
-
-    .desk {
+    .footer .desktop-menu {
         display: none;
     }
 
-    /* ACCORDION */
-
-    .accordion-button {
+    .footer .accordion-button {
         font-size: 14px;
-
         padding: 15px 0;
     }
 
-    .accordion-body {
+    .footer .accordion-body {
         padding-bottom: 15px;
     }
 
-    .links a {
+    .footer .footer-links a {
         font-size: 15px;
-
         padding: 5px 0;
     }
 
-    /* FOLLOW */
-
-    .follow-text {
+    .footer .follow-description {
         font-size: 13px;
-
         line-height: 1.4;
     }
 
-    .social {
+    .footer .social-icons {
         gap: 7px;
     }
 
-    .social a {
+    .footer .social-icons a {
         width: 32px;
-
         height: 32px;
     }
 
-    .social svg {
+    .footer .social-icons svg {
         width: 14px;
-
         height: 14px;
     }
 
-    /* LEGAL */
-
-    .legal {
+    .footer .footer-bottom {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 12px;
-
         padding: 18px 0;
     }
 
-    .copyright {
+    .footer .copyright-text {
         font-size: 13px;
     }
 
-    .payment {
+    .footer .payment-methods {
         flex-wrap: wrap;
-
         gap: 5px;
     }
 
-    .card-icon {
+    .footer .payment-card {
         width: 40px;
-
         height: 24px;
-
         font-size: 7px;
     }
 
-    .watermark {
+    .footer .footer-watermark {
         font-size: 24vw;
-
         padding-top: 30px;
     }
 }
@@ -9755,149 +9911,108 @@ body {
 
 @media (max-width: 399px) {
 
-    .foot {
+    .footer {
         margin-top: 20px;
     }
 
-    .news h2 {
+    .footer .newsletter h2 {
         font-size: 22px;
-
         line-height: 1.2;
     }
 
-    .news p {
+    .footer .newsletter p {
         font-size: 12px;
-
         line-height: 1.5;
-
         margin-bottom: 20px;
     }
 
-    /* EMAIL + BUTTON */
-
-    .email {
+    .footer .email-form {
         width: 100%;
-
         display: flex;
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 15px;
-
         margin-top: 30px;
-
         margin-bottom: 30px;
     }
 
-    .input-box {
+    .footer .email-input-box {
         width: 100%;
-
         height: 50px;
-
         padding: 0 12px;
     }
 
-    .input {
+    .footer .email-input {
         font-size: 18px;
     }
 
-    .btnn {
+    .footer .subscribe-button {
         width: 150px;
-
         height: 45px;
-
         font-size: 13px;
     }
 
-    /* DESKTOP MENU */
-
-    .desk {
+    .footer .desktop-menu {
         display: none;
     }
 
-    /* ACCORDION */
-
-    .accordion-button {
+    .footer .accordion-button {
         font-size: 14px;
-
         padding: 14px 0;
     }
 
-    .accordion-body {
+    .footer .accordion-body {
         padding-bottom: 14px;
     }
 
-    .links a {
+    .footer .footer-links a {
         font-size: 14px;
-
         padding: 5px 0;
     }
 
-    /* FOLLOW */
-
-    .follow-text {
+    .footer .follow-description {
         font-size: 12px;
-
         line-height: 1.4;
     }
 
-    .social {
+    .footer .social-icons {
         gap: 6px;
     }
 
-    .social a {
+    .footer .social-icons a {
         width: 30px;
-
         height: 30px;
     }
 
-    .social svg {
+    .footer .social-icons svg {
         width: 13px;
-
         height: 13px;
     }
 
-    /* LEGAL */
-
-    .legal {
+    .footer .footer-bottom {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 10px;
-
         padding: 16px 0;
     }
 
-    .copyright {
+    .footer .copyright-text {
         font-size: 12px;
     }
 
-    .payment {
+    .footer .payment-methods {
         flex-wrap: wrap;
-
         gap: 5px;
     }
 
-    .card-icon {
+    .footer .payment-card {
         width: 38px;
-
         height: 23px;
-
         font-size: 7px;
     }
 
-    /* WATERMARK */
-
-    .watermark {
+    .footer .footer-watermark {
         font-size: 25vw;
-
         padding-top: 25px;
     }
 }
-
-
-
-
