@@ -44,36 +44,244 @@
 <body>
 
 
-<!-- =====================================================
-     MOBILE HEADER
-===================================================== -->
+    <nav>
 
-<header class="mobile-header">
 
-    <div class="mobile-logo">
-        ONE8
+
+
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
+
+<section class="hero-section">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+
+        <!-- =================================================
+             PART 1 - DESKTOP MENU
+        ================================================== -->
+
+        <div class="desktop-menu">
+
+            <a href="#">
+                Featured
+            </a>
+
+            <a href="../html/womens_sec.html">
+                Women
+            </a>
+
+            <a href="../html/mens_sec.html">
+                Men
+            </a>
+
+            <a href="#">
+                Kids
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             MOBILE HAMBURGER
+        ================================================== -->
+
+        <button
+            class="hamburger"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <!-- =================================================
+             MOBILE SEARCH
+        ================================================== -->
+
+        <a
+            href="#"
+            class="mobile-search"
+            aria-label="Search">
+
+            <i class="bi bi-search"></i>
+
+        </a>
+
+
+        <!-- =================================================
+             PART 2 - LOGO
+        ================================================== -->
+
+        <div class="logo">
+
+            <a href="#">
+
+                <div class="img"></div>
+
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             PART 3 - SEARCH
+        ================================================== -->
+
+        <div class="search-box">
+
+
+            <button type="button">
+
+                <i class="bi bi-search"></i>
+
+            </button>
+
+
+            <input
+                type="text"
+                placeholder="Search">
+
+
+        </div>
+
+
+        <!-- =================================================
+             PART 4 - HEADER ICONS
+        ================================================== -->
+
+        <div class="header-icons">
+
+
+            <!-- HEART -->
+
+            <a
+                href="#"
+                class="heart"
+                aria-label="Wishlist">
+
+                <i class="bi bi-heart"></i>
+
+            </a>
+
+
+            <!-- USER -->
+
+            <a
+                href="#"
+                aria-label="Account">
+
+                <i class="bi bi-person"></i>
+
+            </a>
+
+
+            <!-- CART -->
+
+            <a
+                href="#"
+                aria-label="Shopping bag">
+
+                <i class="bi bi-bag"></i>
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MOBILE OFFCANVAS
+    ====================================================== -->
+
+    <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="mobileMenu"
+        aria-labelledby="mobileMenuLabel">
+
+
+        <!-- OFFCANVAS HEADER -->
+
+        <div class="offcanvas-header">
+
+
+            <h5
+                class="offcanvas-title"
+                id="mobileMenuLabel">
+
+                ONE8
+
+            </h5>
+
+
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close">
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- OFFCANVAS BODY -->
+
+        <div class="offcanvas-body">
+
+
+            <a href="#">
+                Featured
+            </a>
+
+
+            <a href="../html/womens_sec.html">
+                Women
+            </a>
+
+
+            <a href="../html/mens_sec.html">
+                Men
+            </a>
+
+
+            <a href="#">
+                Kids
+            </a>
+
+
+        </div>
+
     </div>
 
 
-    <div class="mobile-icons">
-
-        <a href="#">
-            <i class="bi bi-person"></i>
-        </a>
-
-        <a href="#">
-            <i class="bi bi-bag"></i>
-        </a>
-
-    </div>
-
-</header>
+</section>
 
 
 
-<!-- =====================================================
-     MAIN CONTAINER
-===================================================== -->
+
+    </nav>
+
+
+
+
+<main>
+    <section>
 
 <div class="main-container">
 
@@ -84,619 +292,686 @@
 
     <aside class="left-container">
 
-<div class="main-header">
 
-    <div class="header-text">
+        <!-- =================================================
+             MAIN HEADER
+        ================================================== -->
 
-        <p class="home">
-            <a href="">Home </a>
-            <span> ▲</span>
-              Men-All
-        </p>
+        <div class="main-header">
 
-        <h3>
-            Men - All <span>
-                                   87 Products
-                            </span>
-        </h3>
+            <div class="header-text">
 
-        
+                <p class="home">
+
+                    <a href="/index.html">Home</a>
+
+                    <span>▲</span>
+
+                    Men-Shop All
+
+                </p>
+
+                <h3>
+                    Men - Shop All
+                    <span>176 Products</span>
+                </h3>
+
+            </div>
+
+        </div>
+
+<!-- =========================================================
+     PRICE
+========================================================= -->
+
+<button
+    class="left-title"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#desktopSub1">
+
+    <span>PRICE</span>
+
+    <i class="bi bi-chevron-down"></i>
+
+</button>
+
+
+<div id="desktopSub1" class="collapse">
+
+    <div class="small-subtitles">
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">
+                    ₹ 0.00 - ₹ 2,000.00
+                </span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">
+                    ₹ 2,000.00 - ₹ 4,000.00
+                </span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">
+                    ₹ 4,000.00 - ₹ 6,000.00
+                </span>
+            </span>
+        </a>
 
     </div>
-
-    <!-- <i class="bi bi-chevron-down"></i> -->
 
 </div>
 
 
+<!-- =========================================================
+     GENDER
+========================================================= -->
 
-        <!-- =============================================
-             SUBTITLE 1
-        ============================================== -->
+<button
+    class="left-title"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#desktopSub2">
 
-        <button
-            class="left-title"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#desktopSub1">
+    <span>GENDER</span>
 
-            <span>
-                PRICE
+    <i class="bi bi-chevron-down"></i>
+
+</button>
+
+
+<div id="desktopSub2" class="collapse">
+
+    <div class="small-subtitles">
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">
+                    Male (150)
+                </span>
             </span>
+        </a>
 
-            <i class="bi bi-chevron-down"></i>
-
-        </button>
-
-
-        <div
-            id="desktopSub1"
-            class="collapse">
-
-
-            <div class="small-subtitles">
-
-
-                <a href="#" class="small-subtitle">
-
-                    <span>
-                      ⬜  $0.00-$2,000.00
-                    </span>
-
-                    <span>
-                        
-                    </span>
-
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-
-                    <span>
-                        ⬜ $2000.00-$4,000.00
-                    </span>
-
-                    <span>
-                        +
-                    </span>
-
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-
-                    <span>
-                       ⬜ $4000.00-$6,000.00
-                    </span>
-
-                    <span>
-                        +
-                    </span>
-
-                </a>
-
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =============================================
-             SUBTITLE 2
-        ============================================== -->
-
-        <button
-            class="left-title"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#desktopSub2">
-
-            <span>
-                GENDER
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">
+                    Unisex (26)
+                </span>
             </span>
+        </a>
 
-            <i class="bi bi-chevron-down"></i>
+    </div>
 
-        </button>
-
-
-        <div
-            id="desktopSub2"
-            class="collapse">
+</div>
 
 
-            <div class="small-subtitles">
+<!-- =========================================================
+     PRODUCT TYPE
+========================================================= -->
+
+<button
+    class="left-title"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#desktopSub3">
+
+    <span>PRODUCT TYPE</span>
+
+    <i class="bi bi-chevron-down"></i>
+
+</button>
 
 
-                <a href="#" class="small-subtitle">
-                      
-                    <span>⬜ Female(60)</span>
-                    <span>+</span>
-                </a>
+<div id="desktopSub3" class="collapse">
 
+    <div class="small-subtitles">
 
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Male(1)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Unisex(27)</span>
-                    <span>+</span>
-                </a>
-
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =============================================
-             SUBTITLE 3
-        ============================================== -->
-
-        <button
-            class="left-title"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#desktopSub3">
-
-            <span>
-                PRODUCT TYPE
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Caps (26)</span>
             </span>
+        </a>
 
-            <i class="bi bi-chevron-down"></i>
-
-        </button>
-
-
-        <div
-            id="desktopSub3"
-            class="collapse">
-
-
-            <div class="small-subtitles">
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Cap(26)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Jackets(8)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Leggins(12)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Pants(2)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Shorts(3)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Sneakers(19)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ T-shirt(14)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Tank top(3)</span>
-                    <span>+</span>
-                </a>
-
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =============================================
-             SUBTITLE 4
-        ============================================== -->
-
-        <button
-            class="left-title"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#desktopSub4">
-
-            <span>
-                SIZE
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Cricket shoes (2)</span>
             </span>
+        </a>
 
-            <i class="bi bi-chevron-down"></i>
-
-        </button>
-
-
-        <div
-            id="desktopSub4"
-            class="collapse">
-
-
-            <div class="small-subtitles">
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Xs(42)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ S(42)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ M(42)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ L(42)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ XL(42)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Xxl(42)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ One size(26)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Uk 3(19)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Uk 4(19)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Uk 5(19)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Uk 6(19)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Uk 7(19)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Uk 8(19)</span>
-                    <span>+</span>
-                </a>
-
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =============================================
-             SUBTITLE 5
-        ============================================== -->
-
-        <button
-            class="left-title"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#desktopSub5">
-
-            <span>
-                CATOGORY
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Jacket (3)</span>
             </span>
+        </a>
 
-            <i class="bi bi-chevron-down"></i>
-
-        </button>
-
-
-        <div
-            id="desktopSub5"
-            class="collapse">
-
-
-            <div class="small-subtitles">
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Accessories(25)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Apparel(35)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Footwear(19)</span>
-                    <span>+</span>
-                </a>
-
-
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =============================================
-             SUBTITLE 6
-        ============================================== -->
-
-        <button
-            class="left-title"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#desktopSub6">
-
-            <span>
-                COLOR
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Pants (21)</span>
             </span>
+        </a>
 
-            <i class="bi bi-chevron-down"></i>
-
-        </button>
-
-
-        <div
-            id="desktopSub6"
-            class="collapse">
-
-
-            <div class="small-subtitles">
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Beige(1)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Black(28)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Blue(15)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Brown(4)</span>
-                    <span>+</span>
-                </a>
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Gray(1)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ Green(4)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ Grey(1)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ Off white(1)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ Olive(2)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ Pink(3)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ Purple(4)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ Red(6)</span>
-                    <span>+</span>
-                </a>
-                 <a href="#" class="small-subtitle">
-                    <span>⬜ White(14)</span>
-                    <span>+</span>
-                </a>
-
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =============================================
-             SUBTITLE 7
-        ============================================== -->
-
-        <button
-            class="left-title"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#desktopSub7">
-
-            <span>
-                ACTIVITY
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Polo (43)</span>
             </span>
+        </a>
 
-            <i class="bi bi-chevron-down"></i>
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Short (3)</span>
+            </span>
+        </a>
 
-        </button>
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Shorts (8)</span>
+            </span>
+        </a>
 
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Sneakers (23)</span>
+            </span>
+        </a>
 
-        <div
-            id="desktopSub7"
-            class="collapse">
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Sweatshirt (3)</span>
+            </span>
+        </a>
 
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">T-shirt (44)</span>
+            </span>
+        </a>
 
-            <div class="small-subtitles">
+    </div>
 
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Running(4)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Lifestyle(43)</span>
-                    <span>+</span>
-                </a>
-
-
-                <a href="#" class="small-subtitle">
-                    <span>⬜ Traning(33)</span>
-                    <span>+</span>
-                </a>
-
-
-                
-
-
-            </div>
-
-        </div>
-
-
-    </aside>
+</div>
 
 
+<!-- =========================================================
+     SIZE
+========================================================= -->
+
+<button
+    class="left-title"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#desktopSub4">
+
+    <span>SIZE</span>
+
+    <i class="bi bi-chevron-down"></i>
+
+</button>
+
+
+<div id="desktopSub4" class="collapse">
+
+    <div class="small-subtitles">
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Xs (125)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">S (125)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">M (125)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">L (125)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Xl (125)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Xxl (122)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">One size (26)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 5 (3)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 6 (25)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 7 (25)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 8 (25)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 9 (25)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 10 (25)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 11 (25)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Uk 12 (18)</span>
+            </span>
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CATEGORY
+========================================================= -->
+
+<button
+    class="left-title"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#desktopSub5">
+
+    <span>CATEGORY</span>
+
+    <i class="bi bi-chevron-down"></i>
+
+</button>
+
+
+<div id="desktopSub5" class="collapse">
+
+    <div class="small-subtitles">
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Accessories (25)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Apparel (122)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Footwear (25)</span>
+            </span>
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     COLOR
+========================================================= -->
+
+<button
+    class="left-title"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#desktopSub6">
+
+    <span>COLOR</span>
+
+    <i class="bi bi-chevron-down"></i>
+
+</button>
+
+
+<div id="desktopSub6" class="collapse">
+
+    <div class="small-subtitles">
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Beige (8)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Black (52)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Blue (27)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Brown (9)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Dark navy (1)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Gray (2)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Green (9)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Grey (5)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Maroon (1)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Mint green (1)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Off white (6)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Olive (7)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Orange (1)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Peacoat (8)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Pink (4)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Purple (1)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Red (10)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">White (18)</span>
+            </span>
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     ACTIVITY
+========================================================= -->
+
+<button
+    class="left-title"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#desktopSub7">
+
+    <span>ACTIVITY</span>
+
+    <i class="bi bi-chevron-down"></i>
+
+</button>
+
+
+<div id="desktopSub7" class="collapse">
+
+    <div class="small-subtitles">
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Running (6)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Lifestyle (138)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Training (26)</span>
+            </span>
+        </a>
+
+        <a href="#" class="small-subtitle">
+            <span class="filter-option">
+                <span class="square-btn"></span>
+                <span class="filter-text">Cricket (3)</span>
+            </span>
+        </a>
+
+    </div>
+
+</div>
+</aside>
 
     <!-- =================================================
          RIGHT CONTAINER
     ================================================== -->
 
-    <main class="right-container">
+    <section class="right-container">
 
 
         <!-- =================================================
-             TOP CONTAINER
+             TOP CATEGORY CARDS
         ================================================== -->
 
-        <section class="top-container">
+        <div class="top-container">
 
 
-          <!-- TOP CARD 1 -->
+            <div class="top-card">
 
-<div class="top-card">
+                <div class="top-card-image image1"></div>
 
-    <div class="top-card-image image1">
-    </div>
+                <div class="top-card-content">
 
-    <div class="top-card-content">
+                    <a href="#" class="card-button">
+                        Men - Jym
+                    </a>
 
+                </div>
 
-        <a href="#" class="card-button">
-            Men - Jym
-        </a>
-
-    </div>
-
-</div>
+            </div>
 
 
+            <div class="top-card">
 
-<!-- TOP CARD 2 -->
+                <div class="top-card-image image2"></div>
 
-<div class="top-card">
+                <div class="top-card-content">
 
-    <div class="top-card-image image2">
-    </div>
+                    <a href="#" class="card-button">
+                        Men - Running
+                    </a>
 
-    <div class="top-card-content">
+                </div>
 
-        
-
-        <a href="#" class="card-button">
-            Men - Running
-        </a>
-
-    </div>
-
-</div>
+            </div>
 
 
+            <div class="top-card">
 
-<!-- TOP CARD 3 -->
+                <div class="top-card-image image3"></div>
 
-<div class="top-card">
+                <div class="top-card-content">
 
-    <div class="top-card-image image3">
-    </div>
+                    <a href="#" class="card-button">
+                        Men - Cricket
+                    </a>
 
-    <div class="top-card-content">
+                </div>
 
-
-        <a href="#" class="card-button">
-            Men - Cricket
-        </a>
-
-    </div>
-
-</div>
+            </div>
 
 
+            <div class="top-card">
 
-<!-- TOP CARD 4 -->
+                <div class="top-card-image image4"></div>
 
-<div class="top-card">
+                <div class="top-card-content">
 
-    <div class="top-card-image image4">
-    </div>
+                    <a href="#" class="card-button">
+                        Men - Lifestyle
+                    </a>
 
-    <div class="top-card-content">
+                </div>
 
-
-        <a href="#" class="card-button">
-            Men - Lifestyle
-        </a>
-
-    </div>
-
-</div>
+            </div>
 
 
-        </section>
+        </div>
 
 
 
@@ -704,431 +979,12 @@
              MIDDLE CONTAINER
         ================================================== -->
 
-        <section class="middle-container">
+        <div class="middle-container">
 
 
-            <!-- =============================================
-                 MOBILE MENU / FILTER
-            ============================================== -->
-
-            <div class="mobile-menu-box">
-
-
-                <button
-                    class="middle-title"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mobileMenu">
-
-                    <span>
-                        MENU / FILTER
-                    </span>
-
-                    <i class="bi bi-chevron-down"></i>
-
-                </button>
-
-
-                <div
-                    id="mobileMenu"
-                    class="collapse">
-
-
-                    <div class="mobile-menu-content">
-
-
-                        <!-- MAIN HEADER -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileMainHeader">
-
-                            <span>
-                                MAIN HEADER
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileMainHeader"
-                            class="collapse left-details">
-
-                            <p>
-                                Main header details are displayed here.
-                            </p>
-
-                        </div>
-
-
-
-                        <!-- SUBTITLE 1 -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileSub1">
-
-                            <span>
-                                SUBTITLE 1
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileSub1"
-                            class="collapse">
-
-
-                            <div class="small-subtitles">
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 1</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 2</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 3</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 4</span>
-                                    <span>+</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- SUBTITLE 2 -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileSub2">
-
-                            <span>
-                                SUBTITLE 2
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileSub2"
-                            class="collapse">
-
-
-                            <div class="small-subtitles">
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 1</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 2</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 3</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 4</span>
-                                    <span>+</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- SUBTITLE 3 -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileSub3">
-
-                            <span>
-                                SUBTITLE 3
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileSub3"
-                            class="collapse">
-
-
-                            <div class="small-subtitles">
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 1</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 2</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 3</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 4</span>
-                                    <span>+</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- SUBTITLE 4 -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileSub4">
-
-                            <span>
-                                SUBTITLE 4
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileSub4"
-                            class="collapse">
-
-
-                            <div class="small-subtitles">
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 1</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 2</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 3</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 4</span>
-                                    <span>+</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- SUBTITLE 5 -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileSub5">
-
-                            <span>
-                                SUBTITLE 5
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileSub5"
-                            class="collapse">
-
-
-                            <div class="small-subtitles">
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 1</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 2</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 3</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 4</span>
-                                    <span>+</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- SUBTITLE 6 -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileSub6">
-
-                            <span>
-                                SUBTITLE 6
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileSub6"
-                            class="collapse">
-
-
-                            <div class="small-subtitles">
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 1</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 2</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 3</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 4</span>
-                                    <span>+</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- SUBTITLE 7 -->
-
-                        <button
-                            class="left-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#mobileSub7">
-
-                            <span>
-                                SUBTITLE 7
-                            </span>
-
-                            <i class="bi bi-chevron-down"></i>
-
-                        </button>
-
-
-                        <div
-                            id="mobileSub7"
-                            class="collapse">
-
-
-                            <div class="small-subtitles">
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 1</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 2</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 3</span>
-                                    <span>+</span>
-                                </a>
-
-                                <a href="#" class="small-subtitle">
-                                    <span>SMALL SUBTITLE 4</span>
-                                    <span>+</span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =============================================
-                 MAIN HEADING
-            ============================================== -->
+            <!-- MOST RELEVANT -->
 
             <div class="main-heading-box">
-
 
                 <button
                     class="middle-title"
@@ -1136,691 +992,1287 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#mainHeading">
 
-                    <span>
-                        Feautured
-                    </span>
+                    <span>MOST RELEVANT</span>
 
                     <i class="bi bi-chevron-down"></i>
 
                 </button>
 
 
-                <div
-                    id="mainHeading"
-                    class="collapse">
-
+                <div id="mainHeading" class="collapse">
 
                     <div class="main-heading-content">
-                     <p><a href="">Featured</a></p>
-<p><a href="">Most Relevant</a></p>
-<p><a href="">Best Selling</a></p>
-<p><a href="">Alphabetically A-Z</a></p>
-<p><a href="">Alphabetically Z-A</a></p>
-<p><a href="">Price Low-High</a></p>
-<p><a href="">Price High-Low</a></p>
-<p><a href="">Date New-Old</a></p>
-<p><a href="">Date Old-New</a></p>
+
+                        <a href="#">Featured</a>
+                        <a href="#">Most Relevant</a>
+                        <a href="#">Best Selling</a>
+                        <a href="#">Alphabetically A-Z</a>
+                        <a href="#">Alphabetically Z-A</a>
+                        <a href="#">Price Low-High</a>
+                        <a href="#">Price High-Low</a>
+                        <a href="#">Date New-Old</a>
+                        <a href="#">Date Old-New</a>
 
                     </div>
-
 
                 </div>
 
             </div>
 
 
-        </section>
+            <!-- MOBILE FILTER -->
+
+            <div class="mobile-menu-box">
+
+                <button
+                    class="middle-title"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobileMenu">
+
+                    <span>FILTER (176 RESULTS)</span>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </button>
+
+
+                <div id="mobileMenu" class="collapse">
+
+                    <div class="mobile-menu-content">
+
+                        <a href="#" class="filter-option">
+                            <span>PRICE</span>
+                            <span>+</span>
+                        </a>
+
+                        <a href="#" class="filter-option">
+                            <span>GENDER</span>
+                            <span>+</span>
+                        </a>
+
+                        <a href="#" class="filter-option">
+                            <span>PRODUCT TYPE</span>
+                            <span>+</span>
+                        </a>
+
+                        <a href="#" class="filter-option">
+                            <span>SIZE</span>
+                            <span>+</span>
+                        </a>
+
+                        <a href="#" class="filter-option">
+                            <span>CATEGORY</span>
+                            <span>+</span>
+                        </a>
+
+                        <a href="#" class="filter-option">
+                            <span>COLOR</span>
+                            <span>+</span>
+                        </a>
+
+                        <a href="#" class="filter-option">
+                            <span>ACTIVITY</span>
+                            <span>+</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
 
 
 
         <!-- =================================================
-             BOTTOM CONTAINER
+             PRODUCT SECTION
         ================================================== -->
 
-        <section class="bottom-container">
-<!-- ==================== MEN SECTION ==================== -->
+        <div class="bottom-container">
 
-<div class="men">
+            <div class="men">
 
-<!-- ==================== CARD 1 ==================== -->
 
-<div class="cards">
+                <!-- CARD 1 -->
 
-    <div class="bg">
+                <div class="cards">
 
-        <button class="button1">
+                    <div class="bg bg1">
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-        </button>
+                    </div>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                    <div class="content">
 
-    </div>
+                        <h5>MEN'S LIFESTYLE</h5>
 
-    <div class="content">
+                        <p>Seam XVIII Signature</p>
 
-        <h5>MEN'S LIFESTYLE</h5>
+                        <b>$9,230.00</b>
 
-        <p>Seam XVIII Signature</p>
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                        </div>
 
-        <b>$9,230.00</b>
+                    </div>
 
-        <div class="circles">
+                </div>
 
-            <div class="circle"></div>
-            <div class="circle"></div>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                <!-- CARD 2 -->
 
-        </div>
+                <div class="cards">
 
-    </div>
+                    <div class="bg bg2">
 
-</div>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-<!-- ==================== CARD 2 ==================== -->
+                    </div>
 
-<div class="cards">
+                    <div class="content">
 
-    <div class="bg">
+                        <h5>MEN'S LIFESTYLE</h5>
 
-        <button class="button1">
+                        <p>Seam XVIII Essential</p>
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                        <b>$8,930.00</b>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                            <span class="circle c3"></span>
+                        </div>
 
-        </button>
+                    </div>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                </div>
 
-    </div>
 
-    <div class="content">
+                <!-- CARD 3 -->
 
-        <h5>MEN'S LIFESTYLE</h5>
+                <div class="cards">
 
-        <p>Seam XVIII Essential</p>
+                    <div class="bg bg3">
 
-        <b>$8,930.00</b>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-        <div class="circles">
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+                    </div>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                    <div class="content">
 
-        </div>
+                        <h5>MEN'S RUNNING</h5>
 
-    </div>
+                        <p>Performance Runner</p>
 
-</div>
+                        <b>$7,850.00</b>
 
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                        </div>
 
-<!-- ==================== CARD 3 ==================== -->
+                    </div>
 
-<div class="cards">
+                </div>
 
-    <div class="bg">
 
-        <button class="button1">
+                <!-- CARD 4 -->
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                <div class="cards">
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                    <div class="bg bg4">
 
-        </button>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-    </div>
+                    </div>
 
-    <div class="content">
+                    <div class="content">
 
-        <h5>MEN'S RUNNING</h5>
+                        <h5>MEN'S TRAINING</h5>
 
-        <p>Performance Runner</p>
+                        <p>Training Essential</p>
 
-        <b>$7,850.00</b>
+                        <b>$8,250.00</b>
 
-        <div class="circles">
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                            <span class="circle c3"></span>
+                            <span class="circle c4"></span>
+                        </div>
 
-            <div class="circle"></div>
+                    </div>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                </div>
 
-        </div>
 
-    </div>
+                <!-- CARD 5 -->
 
-</div>
+                <div class="cards">
 
+                    <div class="bg bg5">
 
-<!-- ==================== CARD 4 ==================== -->
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-<div class="cards">
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-    <div class="bg">
+                    </div>
 
-        <button class="button1">
+                    <div class="content">
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                        <h5>MEN'S LIFESTYLE</h5>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                        <p>Everyday Comfort</p>
 
-        </button>
+                        <b>$7,990.00</b>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                        </div>
 
-    </div>
+                    </div>
 
-    <div class="content">
+                </div>
 
-        <h5>MEN'S TRAINING</h5>
 
-        <p>Training Essential</p>
+                <!-- CARD 6 -->
 
-        <b>$8,250.00</b>
+                <div class="cards">
 
-        <div class="circles">
+                    <div class="bg bg6">
 
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-        </div>
+                    </div>
 
-    </div>
+                    <div class="content">
 
-</div>
+                        <h5>MEN'S PERFORMANCE</h5>
 
+                        <p>Seam Performance</p>
 
-<!-- ==================== CARD 5 ==================== -->
+                        <b>$8,650.00</b>
 
-<div class="cards">
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                            <span class="circle c3"></span>
+                        </div>
 
-    <div class="bg">
+                    </div>
 
-        <button class="button1">
+                </div>
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                <!-- CARD 7 -->
 
-        </button>
+                <div class="cards">
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                    <div class="bg bg7">
 
-    </div>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-    <div class="content">
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-        <h5>MEN'S LIFESTYLE</h5>
+                    </div>
 
-        <p>Everyday Comfort</p>
+                    <div class="content">
 
-        <b>$7,990.00</b>
+                        <h5>MEN'S LIFESTYLE</h5>
 
-        <div class="circles">
+                        <p>Signature Street</p>
 
-            <div class="circle"></div>
-            <div class="circle"></div>
+                        <b>$9,100.00</b>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                            <span class="circle c3"></span>
+                            <span class="circle c4"></span>
+                        </div>
 
-        </div>
+                    </div>
 
-    </div>
+                </div>
 
-</div>
 
+                <!-- CARD 8 -->
 
-<!-- ==================== CARD 6 ==================== -->
+                <div class="cards">
 
-<div class="cards">
+                    <div class="bg bg8">
 
-    <div class="bg">
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-        <button class="button1">
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                    </div>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                    <div class="content">
 
-        </button>
+                        <h5>MEN'S RUNNING</h5>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                        <p>Cloud Runner</p>
 
-    </div>
+                        <b>$8,450.00</b>
 
-    <div class="content">
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                        </div>
 
-        <h5>MEN'S PERFORMANCE</h5>
+                    </div>
 
-        <p>Seam Performance</p>
+                </div>
 
-        <b>$8,650.00</b>
 
-        <div class="circles">
+                <!-- CARD 9 -->
 
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+                <div class="cards">
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                    <div class="bg bg9">
 
-        </div>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-    </div>
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-</div>
+                    </div>
 
+                    <div class="content">
 
-<!-- ==================== CARD 7 ==================== -->
+                        <h5>MEN'S TRAINING</h5>
 
-<div class="cards">
+                        <p>Active Trainer</p>
 
-    <div class="bg">
+                        <b>$7,750.00</b>
 
-        <button class="button1">
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                            <span class="circle c3"></span>
+                        </div>
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                    </div>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                </div>
 
-        </button>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                <!-- CARD 10 -->
 
-    </div>
+                <div class="cards">
 
-    <div class="content">
+                    <div class="bg bg10">
 
-        <h5>MEN'S LIFESTYLE</h5>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-        <p>Signature Street</p>
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-        <b>$9,100.00</b>
+                    </div>
 
-        <div class="circles">
+                    <div class="content">
 
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+                        <h5>MEN'S LIFESTYLE</h5>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                        <p>Modern Essential</p>
 
-        </div>
+                        <b>$8,990.00</b>
 
-    </div>
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                        </div>
 
-</div>
+                    </div>
 
+                </div>
 
-<!-- ==================== CARD 8 ==================== -->
 
-<div class="cards">
+                <!-- CARD 11 -->
 
-    <div class="bg">
+                <div class="cards">
 
-        <button class="button1">
+                    <div class="bg bg11">
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-        </button>
+                    </div>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                    <div class="content">
 
-    </div>
+                        <h5>MEN'S PERFORMANCE</h5>
 
-    <div class="content">
+                        <p>Sport Essential</p>
 
-        <h5>MEN'S RUNNING</h5>
+                        <b>$8,150.00</b>
 
-        <p>Cloud Runner</p>
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                            <span class="circle c3"></span>
+                            <span class="circle c4"></span>
+                        </div>
 
-        <b>$8,450.00</b>
+                    </div>
 
-        <div class="circles">
+                </div>
 
-            <div class="circle"></div>
-            <div class="circle"></div>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
+                <!-- CARD 12 -->
 
-        </div>
+                <div class="cards">
 
-    </div>
+                    <div class="bg bg12">
 
-</div>
+                        <a href="#" class="button1">
+                            <span class="spinner-grow"></span>
+                            LIVE NOW
+                        </a>
 
+                        <a href="#" class="button2">
+                            <i class="bi bi-heart"></i>
+                        </a>
 
-<!-- ==================== CARD 9 ==================== -->
+                    </div>
 
-<div class="cards">
+                    <div class="content">
 
-    <div class="bg">
+                        <h5>MEN'S LIFESTYLE</h5>
 
-        <button class="button1">
+                        <p>Daily Signature</p>
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+                        <b>$9,050.00</b>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+                        <div class="circles">
+                            <span class="circle c1"></span>
+                            <span class="circle c2"></span>
+                            <span class="circle c3"></span>
+                        </div>
 
-        </button>
+                    </div>
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+                </div>
 
-    </div>
 
-    <div class="content">
-
-        <h5>MEN'S TRAINING</h5>
-
-        <p>Active Trainer</p>
-
-        <b>$7,750.00</b>
-
-        <div class="circles">
-
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
             </div>
 
         </div>
 
-    </div>
+
+    </section>
 
 </div>
 
-
-<!-- ==================== CARD 10 ==================== -->
-
-<div class="cards">
-
-    <div class="bg">
-
-        <button class="button1">
-
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-
-            <span class="drop-text">
-                LIVE NOW
-            </span>
-
-        </button>
-
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
-
-    </div>
-
-    <div class="content">
-
-        <h5>MEN'S LIFESTYLE</h5>
-
-        <p>Modern Essential</p>
-
-        <b>$8,990.00</b>
-
-        <div class="circles">
-
-            <div class="circle"></div>
-
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
+</section>
+</main>
 
 
-<!-- ==================== CARD 11 ==================== -->
 
-<div class="cards">
 
-    <div class="bg">
 
-        <button class="button1">
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
+<footer class="footer">
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
+    <div class="container-fluid px-4 px-lg-5">
 
-        </button>
+        <!-- =========================================================
+             NEWSLETTER
+        ========================================================== -->
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+        <div class="newsletter pt-5">
 
-    </div>
+            <h2>Join the one8 movement</h2>
 
-    <div class="content">
+            <p>
+                Get exclusive drops, training tips, and stories that fuel
+                your next breakthrough - straight to your inbox.
+            </p>
 
-        <h5>MEN'S PERFORMANCE</h5>
+            <div class="email-form">
 
-        <p>Sport Essential</p>
+                <div class="email-input-box">
 
-        <b>$8,150.00</b>
+                    <input
+                        type="email"
+                        class="email-input"
+                        placeholder="Enter your email address"
+                    >
 
-        <div class="circles">
+                </div>
 
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+                <button class="subscribe-button">
+                    Join the newsletter
+                </button>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
             </div>
 
         </div>
 
-    </div>
 
-</div>
+        <!-- =========================================================
+             MOBILE LOGO
+        ========================================================== -->
+
+        <div class="mobile-logo d-lg-none py-4">
+
+            <img
+                src="./images/one8_logo_white.png"
+                alt="one8 logo"
+            >
+
+        </div>
 
 
-<!-- ==================== CARD 12 ==================== -->
+        <!-- =========================================================
+             MOBILE ACCORDION
+        ========================================================== -->
 
-<div class="cards">
+        <div
+            class="accordion d-lg-none"
+            id="footMenu"
+        >
 
-    <div class="bg">
+            <!-- SHOP -->
 
-        <button class="button1">
+            <div class="accordion-item">
 
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#shopMenu"
+                    >
+                        Shop
+                    </button>
+
+                </h2>
+
+                <div
+                    id="shopMenu"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#footMenu"
+                >
+
+                    <div class="accordion-body footer-links">
+
+                        <a href="https://one8.com/pages/an-ode-to-cricket">
+                            An Ode to Cricket
+                        </a>
+
+                        <a href="https://one8.com/pages/active-lifestyle">
+                            Active Lifestyle
+                        </a>
+
+                        <a href="https://one8.com/pages/cover-drive">
+                            Cover Drive
+                        </a>
+
+                        <a href="https://one8.com/pages/hybrid-workout">
+                            Hybrid Workout
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <span class="drop-text">
-                LIVE NOW
-            </span>
 
-        </button>
+            <!-- ONE8 -->
 
-        <button class="button2">
-            <a href="#">
-                <i class="bi bi-heart"></i>
-            </a>
-        </button>
+            <div class="accordion-item">
 
-    </div>
+                <h2 class="accordion-header">
 
-    <div class="content">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#one8Menu"
+                    >
+                        one8
+                    </button>
 
-        <h5>MEN'S LIFESTYLE</h5>
+                </h2>
 
-        <p>Daily Signature</p>
+                <div
+                    id="one8Menu"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#footMenu"
+                >
 
-        <b>$9,050.00</b>
+                    <div class="accordion-body footer-links">
 
-        <div class="circles">
+                        <a href="https://one8.com/pages/about-us">
+                            About one8
+                        </a>
 
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+                        <a href="https://one8.com/pages/promise-page">
+                            The one8 Promise
+                        </a>
 
-            <div class="small-box">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>Added to Bag</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUSTOMER SUPPORT -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#supportMenu"
+                    >
+                        Customer Support
+                    </button>
+
+                </h2>
+
+                <div
+                    id="supportMenu"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#footMenu"
+                >
+
+                    <div class="accordion-body footer-links">
+
+                        <a href="https://one8.com/pages/contact">
+                            Contact Us
+                        </a>
+
+                        <a href="https://one8.com/apps/return_prime">
+                            Return &amp; Exchange Portal
+                        </a>
+
+                        <a href="https://one8.com/pages/faqs">
+                            FAQs
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accountMenu"
+                    >
+                        Account
+                    </button>
+
+                </h2>
+
+                <div
+                    id="accountMenu"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#footMenu"
+                >
+
+                    <div class="accordion-body footer-links">
+
+                        <a href="https://one8.com/account">
+                            Log In
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LEGAL -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#legalMenu"
+                    >
+                        Legal
+                    </button>
+
+                </h2>
+
+                <div
+                    id="legalMenu"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#footMenu"
+                >
+
+                    <div class="accordion-body footer-links">
+
+                        <a href="https://one8.com/pages/privacy-policy">
+                            Privacy Policy
+                        </a>
+
+                        <a href="https://one8.com/pages/terms-of-use-and-sale">
+                            Terms of Use
+                        </a>
+
+                        <a href="https://one8.com/pages/warranty-policy">
+                            Warranty Policy
+                        </a>
+
+                        <a href="https://one8.com/pages/return-exchanges-and-refund-policy">
+                            Return, Exchanges and Refund Policy
+                        </a>
+
+                        <a href="https://one8.com/pages/cookie-policy">
+                            Cookie Policy
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
+
+        <!-- =========================================================
+             DESKTOP MENU
+        ========================================================== -->
+
+        <div class="desktop-menu d-none d-lg-flex py-5">
+
+            <!-- =====================================================
+                 ONE CONTAINER FOR ALL 5 MENU SECTIONS
+            ====================================================== -->
+
+            <div class="menu-links">
+
+                <!-- SHOP -->
+
+                <div class="menu-column">
+
+                    <div class="menu-title">
+                        Shop
+                    </div>
+
+                    <a href="https://one8.com/pages/an-ode-to-cricket">
+                        An Ode to Cricket
+                    </a>
+
+                    <a href="https://one8.com/pages/active-lifestyle">
+                        Active Lifestyle
+                    </a>
+
+                    <a href="https://one8.com/pages/cover-drive">
+                        Cover Drive
+                    </a>
+
+                    <a href="https://one8.com/pages/hybrid-workout">
+                        Hybrid Workout
+                    </a>
+
+                </div>
+
+
+                <!-- ONE8 -->
+
+                <div class="menu-column">
+
+                    <div class="menu-title">
+                        one8
+                    </div>
+
+                    <a href="https://one8.com/pages/about-us">
+                        About one8
+                    </a>
+
+                    <a href="https://one8.com/pages/promise-page">
+                        The one8 Promise
+                    </a>
+
+                </div>
+
+
+                <!-- CUSTOMER SUPPORT -->
+
+                <div class="menu-column">
+
+                    <div class="menu-title">
+                        Customer Support
+                    </div>
+
+                    <a href="https://one8.com/pages/contact">
+                        Contact Us
+                    </a>
+
+                    <a href="https://one8.com/apps/return_prime">
+                        Return &amp; Exchange Portal
+                    </a>
+
+                    <a href="https://one8.com/pages/faqs">
+                        FAQs
+                    </a>
+
+                </div>
+
+
+                <!-- ACCOUNT -->
+
+                <div class="menu-column">
+
+                    <div class="menu-title">
+                        Account
+                    </div>
+
+                    <a href="https://one8.com/account">
+                        Log In
+                    </a>
+
+                </div>
+
+
+                <!-- LEGAL -->
+
+                <div class="menu-column">
+
+                    <div class="menu-title">
+                        Legal
+                    </div>
+
+                    <a href="https://one8.com/pages/privacy-policy">
+                        Privacy Policy
+                    </a>
+
+                    <a href="https://one8.com/pages/terms-of-use-and-sale">
+                        Terms of Use
+                    </a>
+
+                    <a href="https://one8.com/pages/warranty-policy">
+                        Warranty Policy
+                    </a>
+
+                    <a href="https://one8.com/pages/return-exchanges-and-refund-policy">
+                        Return, Exchanges and Refund Policy
+                    </a>
+
+                    <a href="https://one8.com/pages/cookie-policy">
+                        Cookie Policy
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================================
+                 SEPARATE FOLLOW CONTAINER
+            ====================================================== -->
+
+            <div class="follow-section">
+
+                <div class="menu-title">
+                    Follow
+                </div>
+
+                <p class="follow-description">
+                    Connect with us on our social channels
+                </p>
+
+
+                <div class="social-icons">
+
+                    <!-- Facebook -->
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1V11H7.7v3h2.7v8h3.1z"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- X -->
+
+                    <a
+                        href="https://x.com/one8world"
+                        target="_blank"
+                        aria-label="X"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.4l-5-6.6L6 22H2.9l7.2-8.3L2.5 2H9l4.5 6L18.9 2zm-1.1 17.9h1.8L8.8 4H6.9l10.9 15.9z"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Instagram -->
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.5 6.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- LinkedIn -->
+
+                    <a
+                        href="https://www.linkedin.com/company/one8world/"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path d="M6.5 8.5A1.5 1.5 0 1 0 6.5 5a1.5 1.5 0 0 0 0 3.5zM5 9.5h3v9H5v-9zm5 0h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.6v4.8h-3v-4.3c0-1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.4H10v-9z"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- YouTube -->
+
+                    <a
+                        href="https://www.youtube.com/@one8_world"
+                        target="_blank"
+                        aria-label="YouTube"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- WhatsApp -->
+
+                    <!--
+                    <a href="#" aria-label="WhatsApp">
+
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+
+                            <path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6a11.8 11.8 0 0 0 5.7 1.4h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.2-1.2-6.2-3.4-8.4z"/>
+
+                        </svg>
+
+                    </a>
+                    -->
+
+
+                    <!-- Telegram -->
+
+                    <!--
+                    <a href="#" aria-label="Telegram">
+
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+
+                            <path d="M21.8 2.2 2.5 9.7c-.9.4-.9 1.1-.2 1.4l4.9 1.9 1.9 6c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.5.3 1.7-.8l3.2-15.1c.3-1.3-.5-1.9-1.3-1.6z"/>
+
+                        </svg>
+
+                    </a>
+                    -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================================
+             FOLLOW - MOBILE / TABLET
+        ========================================================== -->
+
+        <div class="follow-section d-lg-none py-4 border-top">
+
+            <div class="menu-title">
+                Follow
+            </div>
+
+            <p class="follow-description">
+                Connect with us on our social channels
+            </p>
+
+            <div class="social-icons">
+
+                <!-- Facebook -->
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                        <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1V11H7.7v3h2.7v8h3.1z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- X -->
+
+                <a
+                    href="https://x.com/one8world"
+                    target="_blank"
+                    aria-label="X"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                        <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.4l-5-6.6L6 22H2.9l7.2-8.3L2.5 2H9l4.5 6L18.9 2zm-1.1 17.9h1.8L8.8 4H6.9l10.9 15.9z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- Instagram -->
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.5 6.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- LinkedIn -->
+
+                <a
+                    href="https://www.linkedin.com/company/one8world/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                        <path d="M6.5 8.5A1.5 1.5 0 1 0 6.5 5a1.5 1.5 0 0 0 0 3.5zM5 9.5h3v9H5v-9zm5 0h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.6v4.8h-3v-4.3c0-1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.4H10v-9z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- YouTube -->
+
+                <a
+                    href="https://www.youtube.com/@one8_world"
+                    target="_blank"
+                    aria-label="YouTube"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================================
+             COPYRIGHT + PAYMENT
+        ========================================================== -->
+
+        <div class="footer-bottom">
+
+            <div class="copyright-text">
+                © one8 2026
+            </div>
+
+            <div class="payment-methods">
+
+                <span class="payment-card amex-card">
+                    AMEX
+                </span>
+
+                <span class="payment-card diners-card">
+                    DINERS
+                </span>
+
+                <span class="payment-card mastercard-card">
+                    <b>●</b><b>●</b>
+                </span>
+
+                <span class="payment-card visa-card">
+                    VISA
+                </span>
+
+                <span class="payment-card maestro-card">
+                    MAESTRO
+                </span>
+
+                <span class="payment-card rupay-card">
+                    RuPay
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================================
+             WATERMARK
+        ========================================================== -->
+
+        <div class="footer-watermark">
+            one8
+        </div>
+
     </div>
 
-</div>
-
-</div>
-
-        </section>
-
-
-    </main>
-
-</div>
+</footer>
 
 
 
-<!-- =====================================================
-     BOOTSTRAP JAVASCRIPT
-===================================================== -->
 
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> 
-</script> 
- 
- 
-</body> 
- 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
+
+
+
+
