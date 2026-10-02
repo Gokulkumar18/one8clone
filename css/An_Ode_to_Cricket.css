@@ -1,0 +1,5334 @@
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section {
+    width: 100%;
+    height: 110px;
+    position: relative;
+    overflow: visible;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 45px;
+
+    background-color: white;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   PART 1
+   DESKTOP MENU
+========================================================= */
+
+.desktop-menu {
+    order: 1;
+
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   DESKTOP MENU LINKS
+========================================================= */
+
+.desktop-menu a {
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.desktop-menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   PART 2
+   LOGO
+========================================================= */
+
+.logo {
+    order: 2;
+
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 200px;
+    margin-top: 5px;
+}
+
+
+.logo a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+
+.logo .img {
+    width: 50px;
+    height: 60px;
+  margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-image: url(../images/one8logoblack.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* =========================================================
+   PART 3
+   SEARCH
+========================================================= */
+
+.search-box {
+    order: 3;
+
+    width: 300px;
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    border: 2px solid black;
+    border-radius: 8px;
+
+    background-color: white;
+}
+
+
+/* =========================================================
+   SEARCH INPUT
+========================================================= */
+
+.search-box input {
+    order: 2;
+
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    padding: 10px 8px;
+
+    color: black;
+
+    font-size: 14px;
+
+    position: relative;
+    z-index: 2;
+
+    border-radius: 8px;
+}
+
+
+.search-box input::placeholder {
+    color: transparent;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+========================================================= */
+
+.search-box button {
+    order: 1;
+
+    width: 38px;
+
+    border: none;
+
+    background: transparent;
+
+    color: black;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    padding: 5px;
+
+    position: relative;
+    z-index: 3;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SEARCH ANIMATED TEXT
+========================================================= */
+
+.search-box::after {
+    content: "Search for";
+
+    position: absolute;
+
+    left: 40px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: black;
+
+    font-size: 17px;
+
+    pointer-events: none;
+
+    white-space: nowrap;
+
+    z-index: 1;
+
+    animation: searchText 15s infinite;
+}
+
+
+/* =========================================================
+   SEARCH ANIMATION
+========================================================= */
+
+@keyframes searchText {
+
+    0% {
+        content: "Search for";
+    }
+
+    2% {
+        content: "Search for S";
+    }
+
+    3% {
+        content: "Search for Sn";
+    }
+
+    4% {
+        content: "Search for Sne";
+    }
+
+    5% {
+        content: "Search for Snea";
+    }
+
+    6% {
+        content: "Search for Sneak";
+    }
+
+    7% {
+        content: "Search for Sneake";
+    }
+
+    8% {
+        content: "Search for Sneaker";
+    }
+
+    9% {
+        content: "Search for Sneakers";
+    }
+
+    10% {
+        content: "Search for Sneaker";
+    }
+
+    11% {
+        content: "Search for Sneake";
+    }
+
+    12% {
+        content: "Search for Sneak";
+    }
+
+    13% {
+        content: "Search for Snea";
+    }
+
+    14% {
+        content: "Search for Sne";
+    }
+
+    15% {
+        content: "Search for Sn";
+    }
+
+    16% {
+        content: "Search for S";
+    }
+
+    17% {
+        content: "Search for";
+    }
+
+
+    /* CRICKET SHOES */
+
+    18% {
+        content: "Search for C";
+    }
+
+    19% {
+        content: "Search for Cr";
+    }
+
+    20% {
+        content: "Search for Cri";
+    }
+
+    21% {
+        content: "Search for Cric";
+    }
+
+    22% {
+        content: "Search for Crick";
+    }
+
+    23% {
+        content: "Search for Cricke";
+    }
+
+    24% {
+        content: "Search for Cricket";
+    }
+
+    25% {
+        content: "Search for Cricket ";
+    }
+
+    26% {
+        content: "Search for Cricket S";
+    }
+
+    27% {
+        content: "Search for Cricket Sh";
+    }
+
+    28% {
+        content: "Search for Cricket Sho";
+    }
+
+    29% {
+        content: "Search for Cricket Shoe";
+    }
+
+    30% {
+        content: "Search for Cricket Shoes";
+    }
+
+    31% {
+        content: "Search for Cricket Shoe";
+    }
+
+    32% {
+        content: "Search for Cricket Sho";
+    }
+
+    33% {
+        content: "Search for Cricket Sh";
+    }
+
+    34% {
+        content: "Search for Cricket S";
+    }
+
+    35% {
+        content: "Search for Cricket ";
+    }
+
+    36% {
+        content: "Search for Cricket";
+    }
+
+    37% {
+        content: "Search for Cricke";
+    }
+
+    38% {
+        content: "Search for Crick";
+    }
+
+    39% {
+        content: "Search for Cric";
+    }
+
+    40% {
+        content: "Search for Cri";
+    }
+
+    41% {
+        content: "Search for Cr";
+    }
+
+    42% {
+        content: "Search for C";
+    }
+
+    43% {
+        content: "Search for";
+    }
+
+
+    /* RUNNING SHOES */
+
+    44% {
+        content: "Search for R";
+    }
+
+    45% {
+        content: "Search for Ru";
+    }
+
+    46% {
+        content: "Search for Run";
+    }
+
+    47% {
+        content: "Search for Runn";
+    }
+
+    48% {
+        content: "Search for Runni";
+    }
+
+    49% {
+        content: "Search for Runnin";
+    }
+
+    50% {
+        content: "Search for Running";
+    }
+
+    51% {
+        content: "Search for Running ";
+    }
+
+    52% {
+        content: "Search for Running S";
+    }
+
+    53% {
+        content: "Search for Running Sh";
+    }
+
+    54% {
+        content: "Search for Running Sho";
+    }
+
+    55% {
+        content: "Search for Running Shoe";
+    }
+
+    56% {
+        content: "Search for Running Shoes";
+    }
+
+    57% {
+        content: "Search for Running Shoe";
+    }
+
+    58% {
+        content: "Search for Running Sho";
+    }
+
+    59% {
+        content: "Search for Running Sh";
+    }
+
+    60% {
+        content: "Search for Running S";
+    }
+
+    61% {
+        content: "Search for Running ";
+    }
+
+    62% {
+        content: "Search for Running";
+    }
+
+    63% {
+        content: "Search for Runnin";
+    }
+
+    64% {
+        content: "Search for Runni";
+    }
+
+    65% {
+        content: "Search for Runn";
+    }
+
+    66% {
+        content: "Search for Run";
+    }
+
+    67% {
+        content: "Search for Ru";
+    }
+
+    68% {
+        content: "Search for R";
+    }
+
+    69% {
+        content: "Search for";
+    }
+
+
+    /* TSHIRTS */
+
+    70% {
+        content: "Search for T";
+    }
+
+    71% {
+        content: "Search for Ts";
+    }
+
+    72% {
+        content: "Search for Tsh";
+    }
+
+    73% {
+        content: "Search for Tshi";
+    }
+
+    74% {
+        content: "Search for Tshir";
+    }
+
+    75% {
+        content: "Search for Tshirt";
+    }
+
+    76% {
+        content: "Search for Tshirts";
+    }
+
+    77% {
+        content: "Search for Tshirt";
+    }
+
+    78% {
+        content: "Search for Tshir";
+    }
+
+    79% {
+        content: "Search for Tshi";
+    }
+
+    80% {
+        content: "Search for Tsh";
+    }
+
+    81% {
+        content: "Search for Ts";
+    }
+
+    82% {
+        content: "Search for T";
+    }
+
+    83% {
+        content: "Search for";
+    }
+
+
+    /* JACKETS */
+
+    84% {
+        content: "Search for J";
+    }
+
+    85% {
+        content: "Search for Ja";
+    }
+
+    86% {
+        content: "Search for Jac";
+    }
+
+    87% {
+        content: "Search for Jack";
+    }
+
+    88% {
+        content: "Search for Jacke";
+    }
+
+    89% {
+        content: "Search for Jacket";
+    }
+
+    90% {
+        content: "Search for Jackets";
+    }
+
+    91% {
+        content: "Search for Jacket";
+    }
+
+    92% {
+        content: "Search for Jacke";
+    }
+
+    93% {
+        content: "Search for Jack";
+    }
+
+    94% {
+        content: "Search for Jac";
+    }
+
+    95% {
+        content: "Search for Ja";
+    }
+
+    96% {
+        content: "Search for J";
+    }
+
+    97% {
+        content: "Search for";
+    }
+
+    100% {
+        content: "Search for";
+    }
+}
+
+
+/* =========================================================
+   HEADER ICONS
+========================================================= */
+
+.header-icons {
+    order: 4;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 20px;
+
+    margin-left: 25px;
+}
+
+
+.header-icons a {
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.hamburger {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: black;
+
+    font-size: 25px;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   MOBILE SEARCH ICON
+========================================================= */
+
+.mobile-search {
+    display: none;
+
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   OFFCANVAS
+========================================================= */
+
+.offcanvas {
+    z-index: 2000;
+}
+
+
+.offcanvas-header {
+    border-bottom: 1px solid #eeeeee;
+
+    padding: 20px;
+}
+
+
+.offcanvas-title {
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.offcanvas-body {
+    padding: 0;
+}
+
+
+.offcanvas-body a {
+    display: block;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 16px;
+}
+
+
+.offcanvas-body a:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* =========================================================
+   TABLET + MOBILE
+   991px and below
+========================================================= */
+
+@media (max-width: 991px) {
+
+    /* HEADER */
+
+    .header {
+        height: 80px;
+
+        padding: 10px 30px;
+
+        display: flex;
+
+        align-items: center;
+
+        background-color: white;
+    }
+
+
+    /* HIDE DESKTOP MENU */
+
+    .desktop-menu {
+        display: none;
+    }
+
+
+    /* HIDE DESKTOP SEARCH */
+
+    .search-box {
+        display: none;
+    }
+
+
+    /* HAMBURGER */
+
+    .hamburger {
+        display: flex;
+
+        order: 1;
+
+        color: black;
+
+        font-size: 25px;
+
+        padding: 0;
+
+        margin: 0;
+    }
+
+
+    /* MOBILE SEARCH */
+
+    .mobile-search {
+        display: flex;
+
+        order: 2;
+
+        margin-left: 15px;
+
+        color: black;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        order: 3;
+
+        width: auto;
+
+        flex: 1;
+
+        margin-left: 0;
+        margin-top: 0;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .logo .img {
+        width: 45px;
+
+        height: 55px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* RIGHT ICONS */
+
+    .header-icons {
+        order: 4;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-end;
+
+        gap: 15px;
+
+        margin-left: 0;
+    }
+
+
+    .header-icons a {
+        color: black;
+
+        font-size: 19px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* HIDE HEART */
+
+    .header-icons a:first-child {
+        display: none;
+    }
+
+
+    /* OFFCANVAS */
+
+    .offcanvas-header {
+        padding: 18px;
+    }
+
+
+    .offcanvas-title {
+        font-size: 21px;
+    }
+
+
+    .offcanvas-body a {
+        padding: 17px 20px;
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   767px and below
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* HEADER */
+
+    .header {
+        height: 70px;
+
+        padding: 8px 20px;
+
+        background-color: white;
+    }
+
+
+    .hamburger {
+        font-size: 24px;
+
+        color: black;
+    }
+
+
+    .mobile-search {
+        font-size: 20px;
+
+        margin-left: 14px;
+
+        color: black;
+    }
+
+
+    .logo .img {
+        width: 42px;
+
+        height: 50px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .header-icons {
+        gap: 14px;
+    }
+
+
+    .header-icons a {
+        font-size: 18px;
+
+        color: black;
+    }
+
+
+    /* OFFCANVAS */
+
+    .offcanvas {
+        width: 300px !important;
+    }
+
+
+    .offcanvas-header {
+        padding: 16px;
+    }
+
+
+    .offcanvas-title {
+        font-size: 20px;
+    }
+
+
+    .offcanvas-body a {
+        padding: 15px 18px;
+
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   575px and below
+========================================================= */
+
+@media (max-width: 575px) {
+
+    /* HEADER */
+
+    .header {
+        height: 65px;
+
+        padding: 8px 15px;
+
+        background-color: white;
+    }
+
+
+    .hamburger {
+        font-size: 23px;
+
+        color: black;
+    }
+
+
+    .mobile-search {
+        font-size: 19px;
+
+        margin-left: 11px;
+
+        color: black;
+    }
+
+
+    .logo .img {
+        width: 38px;
+
+        height: 46px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .header-icons {
+        gap: 10px;
+    }
+
+
+    .header-icons a {
+        font-size: 17px;
+
+        color: black;
+    }
+
+
+    /* OFFCANVAS */
+
+    .offcanvas {
+        width: 85% !important;
+    }
+
+
+    .offcanvas-header {
+        padding: 15px;
+    }
+
+
+    .offcanvas-title {
+        font-size: 19px;
+    }
+
+
+    .offcanvas-body a {
+        padding: 14px 18px;
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   400px and below
+========================================================= */
+
+@media (max-width: 400px) {
+
+    /* HEADER */
+
+    .header {
+        height: 60px;
+
+        padding: 8px 12px;
+
+        background-color: white;
+    }
+
+
+    .hamburger {
+        font-size: 21px;
+
+        color: black;
+    }
+
+
+    .mobile-search {
+        font-size: 18px;
+
+        margin-left: 9px;
+
+        color: black;
+    }
+
+
+    .logo .img {
+        width: 35px;
+
+        height: 42px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .header-icons {
+        gap: 8px;
+    }
+
+
+    .header-icons a {
+        font-size: 16px;
+
+        color: black;
+    }
+
+
+    /* OFFCANVAS */
+
+    .offcanvas {
+        width: 90% !important;
+    }
+
+}
+
+/* =========================================================
+   VIDEO VK1
+========================================================= */
+
+.video_vk1 {
+    width: 100%;
+    height: 700px;
+
+    background-color: black;
+
+    padding: 15px 0;
+
+    /* border: 2px solid green; */
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   VIDEO
+========================================================= */
+
+.video_vk1 video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+    margin: auto;
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .video_vk1 {
+        height: 600px;
+        padding: 12px 0;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .video_vk1 {
+        height: 500px;
+        padding: 10px 0;
+    }
+
+    .video_vk1 video {
+        object-fit: cover;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .video_vk1 {
+        height: 400px;
+        padding: 8px 0;
+    }
+
+    .video_vk1 video {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .video_vk1 {
+        height: 300px;
+        padding: 5px 0;
+
+        border-width: 1px;
+    }
+
+    .video_vk1 video {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .video_vk1 {
+        height: 250px;
+        padding: 3px 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   NEW1 LOGO
+========================================================= */
+
+.new1_logo {
+    width: 60px;
+    height: 60px;
+
+    margin-top: 120px;
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+.new1_logo .bg {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../images/one8logoskyblue.webp");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .new1_logo {
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .new1_logo {
+        width: 50px;
+        height: 50px;
+
+        margin-top: 80px;
+        margin-left: 10px;
+        
+    }
+
+}
+/* =========================================================
+   TRIBUTE
+========================================================= */
+
+.tribute {
+    width: calc(100% - 80px);
+
+    min-height: 130px;
+
+    /* border: 2px solid black; */
+
+    margin: 20px 20px 40px 20px;
+
+    padding: 10px;
+}
+
+.tribute h3 {
+    font-weight: bold;
+
+    font-size: 26px;
+
+    margin-bottom: 10px;
+}
+
+.tribute p {
+    margin-bottom: 5px;
+
+    font-size: 17px;
+   font-weight: 500;
+   
+}
+
+/* =========================================================
+   CARD SECTION
+========================================================= */
+
+.tribute_section {
+    width: calc(100% - 40px);
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin: 20px;
+
+    padding: 10px;
+}
+
+
+/* =========================================================
+   CARD BOX
+========================================================= */
+
+.tribute_section .card_box {
+    width: 100%;
+}
+
+
+/* =========================================================
+   IMAGE CARD
+========================================================= */
+
+.tribute_section .cards {
+    width: 100%;
+
+    height: 650px;
+
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FIRST CARD
+========================================================= */
+
+.tribute_section .card_one {
+    background-image: url("../images/explore_clothing_img.webp");
+}
+
+
+/* =========================================================
+   SECOND CARD
+========================================================= */
+
+.tribute_section .card_two {
+    background-image: url("../images/explore_shoe_img.webp");
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.tribute_section .card_content {
+    width: 100%;
+
+    text-align: center;
+
+    background: white;
+
+    margin-top: 25px;
+
+    padding-bottom: 15px;
+}
+
+.tribute_section .card_content a {
+    display: inline-block;
+
+    font-size: 16px;
+
+    border-radius: 30px;
+
+    border: 2px solid aqua;
+
+    text-decoration: none;
+
+    color: black;
+
+    background-color: aqua;
+
+    text-align: center;
+
+    padding: 15px 33px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.tribute_section .card_content a:hover {
+    background-color: black;
+
+    color: white;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .tribute_section .cards {
+        height: 550px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .tribute_section {
+        width: calc(100% - 30px);
+
+        grid-template-columns: 1fr;
+
+        margin: 15px;
+
+        padding: 8px;
+
+        gap: 20px;
+    }
+
+    .tribute_section .cards {
+        height: 500px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .tribute_section {
+        width: calc(100% - 20px);
+
+        margin: 10px;
+
+        padding: 5px;
+
+        gap: 20px;
+    }
+
+    .tribute_section .cards {
+        height: 450px;
+    }
+
+    .tribute_section .card_content {
+        margin-top: 15px;
+    }
+
+    .tribute_section .card_content a {
+        font-size: 15px;
+
+        padding: 13px 28px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .tribute_section {
+        width: calc(100% - 10px);
+
+        margin: 5px;
+
+        padding: 5px;
+
+        gap: 15px;
+    }
+
+    .tribute_section .cards {
+        height: 350px;
+
+        border-radius: 8px;
+    }
+
+    .tribute_section .card_content {
+        margin-top: 10px;
+
+        padding-bottom: 10px;
+    }
+
+    .tribute_section .card_content a {
+        font-size: 14px;
+
+        padding: 11px 25px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .tribute_section {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 5px;
+
+        gap: 15px;
+    }
+
+    .tribute_section .cards {
+        height: 300px;
+    }
+
+    .tribute_section .card_content a {
+        font-size: 13px;
+
+        padding: 10px 22px;
+    }
+
+}
+/* =========================================================
+   CULTURE INTRO
+========================================================= */
+
+.culture1 {
+    width: calc(100% - 30px);
+
+    height: 150px;
+
+    margin: 15px;
+
+    padding: 10px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.culture1 h3 {
+    font-weight: bold;
+
+    font-size: 25px;
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.culture1 p {
+    font-size: 16px;
+
+    font-weight: 520;
+
+    padding-bottom: 10px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .culture1 {
+        width: calc(100% - 30px);
+
+        height: auto;
+
+        margin: 15px;
+
+        padding: 10px;
+    }
+
+    .culture1 h3 {
+        font-size: 24px;
+
+        padding-top: 25px;
+        padding-bottom: 18px;
+    }
+
+    .culture1 p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .culture1 {
+        width: calc(100% - 30px);
+
+        height: auto;
+
+        margin: 15px;
+
+        padding: 10px;
+    }
+
+    .culture1 h3 {
+        font-size: 22px;
+
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .culture1 p {
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .culture1 {
+        width: calc(100% - 20px);
+
+        height: auto;
+
+        margin: 10px;
+
+        padding: 8px;
+    }
+
+    .culture1 h3 {
+        font-size: 20px;
+
+        padding-top: 15px;
+        padding-bottom: 12px;
+    }
+
+    .culture1 p {
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        padding-bottom: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .culture1 {
+        width: calc(100% - 10px);
+
+        margin: 5px;
+
+        padding: 5px;
+    }
+
+    .culture1 h3 {
+        font-size: 18px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .culture1 p {
+        font-size: 13px;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .culture1 {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 8px;
+    }
+
+    .culture1 h3 {
+        font-size: 17px;
+
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .culture1 p {
+        font-size: 13px;
+
+        line-height: 1.4;
+    }
+
+}
+
+/* =========================================================
+   CULTURE VIDEO
+========================================================= */
+
+.culture2_vid {
+    margin-top: 45px;
+
+    width: 100%;
+
+    height: 700px;
+
+    background-color: black;
+
+    padding: 15px 0;
+}
+
+.culture2_vid video {
+    width: 100%;
+
+    height: 670px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .culture2_vid {
+        height: 600px;
+
+        padding: 12px 0;
+    }
+
+    .culture2_vid video {
+        height: 576px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .culture2_vid {
+        height: 500px;
+
+        padding: 10px 0;
+    }
+
+    .culture2_vid video {
+        height: 480px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .culture2_vid {
+        margin-top: 30px;
+
+        height: 400px;
+
+        padding: 8px 0;
+    }
+
+    .culture2_vid video {
+        height: 384px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .culture2_vid {
+        margin-top: 25px;
+
+        height: 320px;
+
+        padding: 5px 0;
+    }
+
+    .culture2_vid video {
+        height: 310px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .culture2_vid {
+        margin-top: 20px;
+
+        height: 270px;
+
+        padding: 4px 0;
+    }
+
+    .culture2_vid video {
+        height: 262px;
+    }
+
+}
+
+/* =========================================================
+   CULTURE PHOTOS
+========================================================= */
+
+.culture3_photos {
+    width: 100%;
+
+    height: 500px;
+
+    display: flex;
+
+    gap: 7px;
+
+    background-color: white;
+
+    margin-top: 60px;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    padding: 15px;
+
+    scrollbar-width: none;
+}
+
+.culture3_photos::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================================
+   COMMON PHOTO CARD
+========================================================= */
+
+.culture3_photos .cart1,
+.culture3_photos .cart2,
+.culture3_photos .cart3,
+.culture3_photos .cart4 {
+    flex-shrink: 0;
+
+    height: 100%;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   PHOTO 1
+========================================================= */
+
+.culture3_photos .cart1 {
+    width: 350px;
+
+    background-image: url("../images/culture3_photos/1.webp");
+}
+
+
+/* =========================================================
+   PHOTO 2
+========================================================= */
+
+.culture3_photos .cart2 {
+    width: 500px;
+
+    background-image: url("../images/culture3_photos/2.webp");
+}
+
+
+/* =========================================================
+   PHOTO 3
+========================================================= */
+
+.culture3_photos .cart3 {
+    width: 590px;
+
+    background-image: url("../images/culture3_photos/3.webp");
+}
+
+
+/* =========================================================
+   PHOTO 4
+========================================================= */
+
+.culture3_photos .cart4 {
+    width: 800px;
+
+    background-image: url("../images/culture3_photos/4.webp");
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .culture3_photos {
+        height: 450px;
+
+        margin-top: 50px;
+
+        padding: 12px;
+    }
+
+    .culture3_photos .cart1 {
+        width: 300px;
+    }
+
+    .culture3_photos .cart2 {
+        width: 430px;
+    }
+
+    .culture3_photos .cart3 {
+        width: 500px;
+    }
+
+    .culture3_photos .cart4 {
+        width: 680px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .culture3_photos {
+        height: 400px;
+
+        margin-top: 40px;
+
+        padding: 10px;
+    }
+
+    .culture3_photos .cart1 {
+        width: 260px;
+    }
+
+    .culture3_photos .cart2 {
+        width: 360px;
+    }
+
+    .culture3_photos .cart3 {
+        width: 430px;
+    }
+
+    .culture3_photos .cart4 {
+        width: 560px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .culture3_photos {
+        height: 330px;
+
+        margin-top: 30px;
+
+        gap: 6px;
+
+        padding: 8px;
+    }
+
+    .culture3_photos .cart1 {
+        width: 220px;
+    }
+
+    .culture3_photos .cart2 {
+        width: 300px;
+    }
+
+    .culture3_photos .cart3 {
+        width: 350px;
+    }
+
+    .culture3_photos .cart4 {
+        width: 450px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .culture3_photos {
+        height: 280px;
+
+        margin-top: 25px;
+
+        gap: 5px;
+
+        padding: 6px;
+    }
+
+    .culture3_photos .cart1 {
+        width: 190px;
+    }
+
+    .culture3_photos .cart2 {
+        width: 250px;
+    }
+
+    .culture3_photos .cart3 {
+        width: 290px;
+    }
+
+    .culture3_photos .cart4 {
+        width: 380px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .culture3_photos {
+        height: 240px;
+
+        margin-top: 20px;
+
+        gap: 5px;
+
+        padding: 5px;
+    }
+
+    .culture3_photos .cart1 {
+        width: 165px;
+    }
+
+    .culture3_photos .cart2 {
+        width: 220px;
+    }
+
+    .culture3_photos .cart3 {
+        width: 250px;
+    }
+
+    .culture3_photos .cart4 {
+        width: 320px;
+    }
+
+}
+
+
+/* =========================================================
+   MENN PRODUCT CONTAINER
+   FLEX - SINGLE ROW
+========================================================= */
+
+.menn {
+    width: 98%;
+
+    height: 700px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.menn::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.menn .cards {
+    width: 400px;
+
+   
+
+    height: 670px;
+
+    background-color: #F5F5F5;
+
+    border-radius: 5px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.menn .cards .bg {
+    width: 100%;
+
+    height: 75%;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGES
+========================================================= */
+
+.menn .bg1 {
+    background-image: url("../images/mens_sec/1.webp");
+}
+
+.menn .bg1:hover {
+    background-image: url("../images/mens_sec/1.1.webp");
+}
+
+
+.menn .bg2 {
+    background-image: url("../images/mens_sec/2.webp");
+}
+
+.menn .bg2:hover {
+    background-image: url("../images/mens_sec/2.1.webp");
+}
+
+
+.menn .bg3 {
+    background-image: url("../images/mens_sec/3.webp");
+}
+
+.menn .bg3:hover {
+    background-image: url("../images/mens_sec/3.1.jpg");
+}
+
+
+.menn .bg4 {
+    background-image: url("../images/mens_sec/4.webp");
+}
+
+.menn .bg4:hover {
+    background-image: url("../images/mens_sec/4.1.webp");
+}
+
+
+.menn .bg5 {
+    background-image: url("../images/mens_sec/5.webp");
+}
+
+.menn .bg5:hover {
+    background-image: url("../images/mens_sec/5.1.webp");
+}
+
+
+.menn .bg6 {
+    background-image: url("../images/mens_sec/6.webp");
+}
+
+.menn .bg6:hover {
+    background-image: url("../images/mens_sec/6.1.webp");
+}
+
+
+.menn .bg7 {
+    background-image: url("../images/mens_sec/7.webp");
+}
+
+.menn .bg7:hover {
+    background-image: url("../images/mens_sec/7.1.webp");
+}
+
+
+.menn .bg8 {
+    background-image: url("../images/mens_sec/8.webp");
+}
+
+.menn .bg8:hover {
+    background-image: url("../images/mens_sec/8.1.webp");
+}
+
+
+.menn .bg9 {
+    background-image: url("../images/mens_sec/9.webp");
+}
+
+.menn .bg9:hover {
+    background-image: url("../images/mens_sec/9.1.webp");
+}
+
+
+.menn .bg10 {
+    background-image: url("../images/mens_sec/10.webp");
+}
+
+.menn .bg10:hover {
+    background-image: url("../images/mens_sec/10.1.webp");
+}
+
+
+.menn .bg11 {
+    background-image: url("../images/mens_sec/11.webp");
+}
+
+.menn .bg11:hover {
+    background-image: url("../images/mens_sec/11.1.webp");
+}
+
+
+.menn .bg12 {
+    background-image: url("../images/mens_sec/12.webp");
+}
+
+.menn .bg12:hover {
+    background-image: url("../images/mens_sec/12.1.webp");
+}
+
+
+/* =========================================================
+   LIVE NOW
+   ONLY ODD CARDS
+========================================================= */
+
+.menn .button1 {
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    margin: 10px;
+
+    padding: 9px 12px;
+
+    color: #000;
+
+    background-color: #fff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   HIDE LIVE NOW ON EVEN CARDS
+========================================================= */
+
+.menn .cards:nth-child(even) .button1 {
+    display: none;
+}
+
+
+/* =========================================================
+   SMALL SQUARE LEFT OF LIVE NOW
+========================================================= */
+/* 
+.menn .button1::before {
+    content: "";
+
+    width: 24px;
+
+    height: 24px;
+
+    position: absolute;
+
+    left: -30px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background-color: #fff;
+
+    border: 1px solid #ddd;
+
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+} */
+
+
+/* =========================================================
+   SMALL SQUARE HOVER
+========================================================= */
+
+/* .menn .button1:hover::before {
+    background-color: #000;
+} */
+
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.menn .button1 .spinner-grow {
+    width: 7px;
+
+    height: 7px;
+}
+
+
+/* =========================================================
+   HEART
+========================================================= */
+
+.menn .button2 {
+    position: absolute;
+
+    top: 10px;
+
+    right: 0;
+
+    margin-right: 10px;
+
+    color: #000;
+
+    text-decoration: none;
+
+    background-color: transparent;
+
+    border: none;
+
+    z-index: 5;
+}
+
+
+.menn .button2 i {
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   PRODUCT CONTENT
+========================================================= */
+
+.menn .cards .content {
+    width: 100%;
+
+    height: 25%;
+
+    padding-left: 15px;
+
+    padding-top: 10px;
+}
+
+
+.menn .cards .content h5 {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+.menn .cards .content p {
+    font-size: 15px;
+
+    margin-bottom: 6px;
+}
+
+
+.menn .cards .content b {
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   CIRCLES
+========================================================= */
+
+.menn .circles {
+    display: flex;
+
+    gap: 7px;
+
+    align-items: center;
+}
+
+
+.menn .circle {
+    width: 24px;
+
+    height: 24px;
+
+    min-width: 24px;
+
+    border-radius: 50%;
+
+    border: 1px solid #999;
+
+    display: inline-block;
+}
+
+
+/* =========================================================
+   CIRCLE COLORS
+========================================================= */
+
+.menn .c1 {
+    background-color: #000;
+}
+
+.menn .c2 {
+    background-color: #fff;
+}
+
+.menn .c3 {
+    background-color: #777;
+}
+
+.menn .c4 {
+    background-color: #ddd;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .menn {
+        width: 98%;
+
+        height: 500px;
+
+        gap: 10px;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+    }
+
+
+    .menn .cards {
+        width: 350px;
+
+        min-width: 350px;
+
+        height: 480px;
+    }
+
+
+    .menn .cards .bg {
+        height: 75%;
+    }
+
+
+    .menn .cards .content {
+        height: 25%;
+
+        padding-left: 12px;
+
+        padding-top: 8px;
+    }
+
+
+    .menn .cards .content h5 {
+        font-size: 10px;
+    }
+
+
+    .menn .cards .content p {
+        font-size: 12px;
+    }
+
+
+    .menn .cards .content b {
+        font-size: 15px;
+    }
+
+
+    .menn .circle {
+        width: 21px;
+
+        height: 21px;
+
+        min-width: 21px;
+    }
+
+
+    .menn .button1 {
+        margin: 8px;
+
+        padding: 7px 9px;
+
+        font-size: 8px;
+    }
+
+
+    .menn .button1::before {
+        width: 21px;
+
+        height: 21px;
+
+        left: -26px;
+    }
+
+
+    .menn .button2 {
+        top: 7px;
+
+        right: 0;
+
+        margin-right: 8px;
+    }
+
+
+    .menn .button2 i {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .menn {
+        width: 100%;
+
+        height: 450px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: nowrap;
+
+        gap: 5px;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+    }
+
+
+    .menn .cards {
+        width: 280px;
+
+        min-width: 280px;
+
+        height: 430px;
+    }
+
+
+    .menn .cards .bg {
+        height: 75%;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .menn .cards .content {
+        height: 25%;
+
+        padding-left: 9px;
+
+        padding-top: 7px;
+    }
+
+
+    .menn .cards .content h5 {
+        font-size: 9px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .menn .cards .content p {
+        font-size: 10px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .menn .cards .content b {
+        font-size: 14px;
+
+        margin-bottom: 6px;
+    }
+
+
+    /* =====================================================
+       CIRCLES
+    ===================================================== */
+
+    .menn .circles {
+        gap: 5px;
+    }
+
+
+    .menn .circle {
+        width: 19px;
+
+        height: 19px;
+
+        min-width: 19px;
+    }
+
+
+    /* =====================================================
+       LIVE NOW
+    ===================================================== */
+
+    .menn .button1 {
+        margin: 6px;
+
+        padding: 5px 7px;
+
+        font-size: 7px;
+    }
+
+
+    .menn .button1::before {
+        width: 18px;
+
+        height: 18px;
+
+        left: -22px;
+    }
+
+
+    .menn .button1 .spinner-grow {
+        width: 5px;
+
+        height: 5px;
+    }
+
+
+    /* =====================================================
+       HEART
+    ===================================================== */
+
+    .menn .button2 {
+        top: 4px;
+
+        right: 0;
+
+        margin-right: 5px;
+    }
+
+
+    .menn .button2 i {
+        font-size: 17px;
+    }
+
+}
+/* =========================================================
+   CULTURE VIDEO 5
+========================================================= */
+
+.culture5_vid {
+    margin-top: 45px;
+
+    width: 100%;
+
+    height: 680px;
+
+    background-color: white;
+
+    margin-bottom: 100px;
+
+    padding: 15px 0;
+}
+
+.culture5_vid video {
+    width: 100%;
+
+    height: 645px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .culture5_vid {
+        height: 600px;
+
+        margin-top: 40px;
+
+        margin-bottom: 80px;
+
+        padding: 12px 0;
+    }
+
+    .culture5_vid video {
+        height: 576px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .culture5_vid {
+        height: 500px;
+
+        margin-top: 35px;
+
+        margin-bottom: 70px;
+
+        padding: 10px 0;
+    }
+
+    .culture5_vid video {
+        height: 480px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .culture5_vid {
+        height: 400px;
+
+        margin-top: 30px;
+
+        margin-bottom: 50px;
+
+        padding: 8px 0;
+    }
+
+    .culture5_vid video {
+        height: 384px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .culture5_vid {
+        height: 320px;
+
+        margin-top: 25px;
+
+        margin-bottom: 40px;
+
+        padding: 5px 0;
+    }
+
+    .culture5_vid video {
+        height: 310px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .culture5_vid {
+        height: 270px;
+
+        margin-top: 20px;
+
+        margin-bottom: 30px;
+
+        padding: 4px 0;
+    }
+
+    .culture5_vid video {
+        height: 262px;
+    }
+
+}
+/* =========================================================
+   EXAMPLE PHOTO CONTAINER 1
+========================================================= */
+
+.example_photo_container1 {
+    margin-top: 50px;
+
+    width: 100%;
+
+    min-height: 1150px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 0 5px;
+}
+
+.example_photo_container1 .photo1 {
+    width: 50%;
+
+    height: 1100px;
+
+    border-radius: 10px;
+
+    background-image: url("../images/exp_photo_container1/1.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+.example_photo_container1 .photo2 {
+    width: 50%;
+
+    margin-top: 100px;
+}
+
+.example_photo_container1 .photo2_img {
+    width: 100%;
+
+    height: 800px;
+
+    border-radius: 10px;
+
+    background-image: url("../images/exp_photo_container1/2.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+.photo2_content {
+    padding: 15px;
+}
+
+.photo2_content p {
+    margin-top: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   EXAMPLE PHOTO CONTAINER 2
+========================================================= */
+
+.example_photo_container2 {
+    width: 100%;
+
+    min-height: 830px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 5px;
+
+    padding: 0 5px;
+
+    margin-bottom: 50px;
+}
+
+.example_photo_container2 .photo1 {
+    margin-top: 150px;
+
+    width: 50%;
+
+    height: 600px;
+
+    background-image: url("../images/example_photo_container2/3.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+}
+
+.example_photo_container2 .photo2 {
+    width: 50%;
+
+    height: 820px;
+
+    background-image: url("../images/example_photo_container2/4.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   EXAMPLE PHOTO CONTAINER 3
+========================================================= */
+
+.example_photo_container3 {
+    margin-top: 100px;
+
+    width: 100%;
+
+    height: 700px;
+
+    background-image: url("../images/exp_photo_container3/5.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    margin-bottom: 100px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .example_photo_container1 {
+        min-height: 950px;
+    }
+
+    .example_photo_container1 .photo1 {
+        height: 900px;
+    }
+
+    .example_photo_container1 .photo2_img {
+        height: 650px;
+    }
+
+    .example_photo_container2 {
+        min-height: 700px;
+    }
+
+    .example_photo_container2 .photo1 {
+        height: 500px;
+    }
+
+    .example_photo_container2 .photo2 {
+        height: 700px;
+    }
+
+    .example_photo_container3 {
+        height: 600px;
+
+        margin-top: 80px;
+
+        margin-bottom: 80px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    /* CONTAINER 1 */
+
+    .example_photo_container1 {
+        width: 100%;
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 0 10px;
+    }
+
+    .example_photo_container1 .photo1 {
+        width: 100%;
+
+        height: 600px;
+    }
+
+    .example_photo_container1 .photo2 {
+        width: 100%;
+
+        margin-top: 0;
+    }
+
+    .example_photo_container1 .photo2_img {
+        width: 100%;
+
+        height: 600px;
+    }
+
+
+    /* CONTAINER 2 */
+
+    .example_photo_container2 {
+        width: 100%;
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 0 10px;
+    }
+
+    .example_photo_container2 .photo1 {
+        width: 100%;
+
+        height: 500px;
+
+        margin-top: 0;
+    }
+
+    .example_photo_container2 .photo2 {
+        width: 100%;
+
+        height: 600px;
+    }
+
+
+    /* CONTAINER 3 */
+
+    .example_photo_container3 {
+        width: 100%;
+
+        height: 500px;
+
+        margin-top: 70px;
+
+        margin-bottom: 70px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* CONTAINER 1 */
+
+    .example_photo_container1 {
+        gap: 15px;
+
+        padding: 0 8px;
+
+        margin-top: 35px;
+    }
+
+    .example_photo_container1 .photo1 {
+        height: 450px;
+    }
+
+    .example_photo_container1 .photo2_img {
+        height: 450px;
+    }
+
+    .photo2_content {
+        padding: 10px;
+    }
+
+    .photo2_content p {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+
+    /* CONTAINER 2 */
+
+    .example_photo_container2 {
+        gap: 15px;
+
+        padding: 0 8px;
+
+        margin-bottom: 35px;
+    }
+
+    .example_photo_container2 .photo1 {
+        height: 400px;
+    }
+
+    .example_photo_container2 .photo2 {
+        height: 450px;
+    }
+
+
+    /* CONTAINER 3 */
+
+    .example_photo_container3 {
+        height: 400px;
+
+        margin-top: 50px;
+
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    /* CONTAINER 1 */
+
+    .example_photo_container1 {
+        gap: 12px;
+
+        padding: 0 5px;
+
+        margin-top: 25px;
+    }
+
+    .example_photo_container1 .photo1 {
+        height: 350px;
+
+        border-radius: 8px;
+    }
+
+    .example_photo_container1 .photo2_img {
+        height: 350px;
+
+        border-radius: 8px;
+    }
+
+    .photo2_content {
+        padding: 8px;
+    }
+
+    .photo2_content p {
+        font-size: 13px;
+
+        line-height: 1.5;
+    }
+
+
+    /* CONTAINER 2 */
+
+    .example_photo_container2 {
+        gap: 12px;
+
+        padding: 0 5px;
+    }
+
+    .example_photo_container2 .photo1 {
+        height: 320px;
+
+        border-radius: 8px;
+    }
+
+    .example_photo_container2 .photo2 {
+        height: 350px;
+
+        border-radius: 8px;
+    }
+
+
+    /* CONTAINER 3 */
+
+    .example_photo_container3 {
+        height: 320px;
+
+        margin-top: 40px;
+
+        margin-bottom: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    /* CONTAINER 1 */
+
+    .example_photo_container1 {
+        gap: 10px;
+
+        padding: 0 4px;
+    }
+
+    .example_photo_container1 .photo1 {
+        height: 280px;
+    }
+
+    .example_photo_container1 .photo2_img {
+        height: 280px;
+    }
+
+    .photo2_content {
+        padding: 5px;
+    }
+
+    .photo2_content p {
+        font-size: 12px;
+    }
+
+
+    /* CONTAINER 2 */
+
+    .example_photo_container2 {
+        gap: 10px;
+
+        padding: 0 4px;
+    }
+
+    .example_photo_container2 .photo1 {
+        height: 260px;
+    }
+
+    .example_photo_container2 .photo2 {
+        height: 280px;
+    }
+
+
+    /* CONTAINER 3 */
+
+    .example_photo_container3 {
+        height: 270px;
+
+        margin-top: 30px;
+
+        margin-bottom: 30px;
+    }
+
+}
+/* =========================================
+   ELEVATE TITLE
+========================================= */
+
+.elevate {
+    font-weight: bold;
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   ELEVATE CARDS
+========================================= */
+
+.elevate_yr_evrdy {
+    width: 100%;
+    height: 450px;
+
+    display: flex;
+    gap: 5px;
+
+    margin-left: 15px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.elevate_yr_evrdy .card {
+    width: 25%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================
+   CARD IMAGES
+========================================= */
+
+.elevate_yr_evrdy .img1 {
+    background-image: url(../images/elevate_yr_evrdy/footwear1.webp);
+}
+
+.elevate_yr_evrdy .img2 {
+    background-image: url(../images/elevate_yr_evrdy/clothing.webp);
+}
+
+.elevate_yr_evrdy .img3 {
+    background-image: url(../images/elevate_yr_evrdy/caps.webp);
+}
+
+.elevate_yr_evrdy .img4 {
+    background-image: url(../images/elevate_yr_evrdy/footwear.jpg);
+}
+
+
+/* =========================================
+   HOVER IMAGE
+========================================= */
+
+.elevate_yr_evrdy .hover_img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 1;
+
+    transform: translateY(100%);
+
+    transition: transform 0.6s ease;
+}
+
+
+/* =========================================
+   INDIVIDUAL CARD HOVER
+========================================= */
+
+.elevate_yr_evrdy .card:hover .hover_img {
+    transform: translateY(0);
+
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   HOVER IMAGE FOR EACH CARD
+========================================= */
+
+.elevate_yr_evrdy .img1 .hover_img {
+    background-image: url(../images/logo.png);
+}
+
+.elevate_yr_evrdy .img2 .hover_img {
+    background-image: url(../images/logo.png);
+}
+
+.elevate_yr_evrdy .img3 .hover_img {
+    background-image: url(../images/logo.png);
+}
+
+.elevate_yr_evrdy .img4 .hover_img {
+    background-image: url(../images/logo.png);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.elevate_yr_evrdy button {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    transform: translateX(-50%);
+
+    padding: 18px 30px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: white;
+    color: black;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   BUTTON LINK
+========================================= */
+
+.elevate_yr_evrdy button a {
+    text-decoration: none;
+
+    color: black;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SHOW BUTTON
+========================================= */
+
+.elevate_yr_evrdy .card:hover button {
+    opacity: 1;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.elevate_yr_evrdy .img1 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 36%;
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+.elevate_yr_evrdy .img2 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 40%;
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+.elevate_yr_evrdy .img3 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 42%;
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+.elevate_yr_evrdy .img4 h4 {
+    position: absolute;
+
+    top: 35px;
+    left: 32%;
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   ELEVATE - FULL RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   LARGE LAPTOP
+   1200px - 1399px
+========================================================= */
+
+@media (max-width: 1399px) {
+
+    .elevate {
+        margin-top: 80px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .elevate_yr_evrdy {
+        width: 100%;
+        height: 420px;
+
+        gap: 5px;
+        margin-left: 12px;
+    }
+
+    .elevate_yr_evrdy .card {
+        width: 24%;
+        height: 100%;
+    }
+
+    .elevate_yr_evrdy button {
+        bottom: 18px;
+        padding: 16px 27px;
+        font-size: 13px;
+    }
+
+    .elevate_yr_evrdy button a {
+        font-size: 13px;
+    }
+
+    .elevate_yr_evrdy .img1 h4,
+    .elevate_yr_evrdy .img2 h4,
+    .elevate_yr_evrdy .img3 h4,
+    .elevate_yr_evrdy .img4 h4 {
+
+        top: 32px;
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .elevate {
+        margin-top: 70px;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    .elevate_yr_evrdy {
+        width: 100%;
+        height: 390px;
+
+        gap: 5px;
+        margin-left: 10px;
+    }
+
+    .elevate_yr_evrdy .card {
+        width: 24%;
+        height: 100%;
+    }
+
+    .elevate_yr_evrdy button {
+        bottom: 16px;
+
+        padding: 14px 25px;
+
+        font-size: 12px;
+
+        border-radius: 18px;
+    }
+
+    .elevate_yr_evrdy button a {
+        font-size: 12px;
+    }
+
+    .elevate_yr_evrdy .img1 h4,
+    .elevate_yr_evrdy .img2 h4,
+    .elevate_yr_evrdy .img3 h4,
+    .elevate_yr_evrdy .img4 h4 {
+
+        top: 30px;
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .elevate {
+        margin-top: 60px;
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .elevate_yr_evrdy {
+        width: 100%;
+        height: 350px;
+
+        gap: 5px;
+        margin-left: 8px;
+    }
+
+    .elevate_yr_evrdy .card {
+        width: 24%;
+        height: 100%;
+    }
+
+    .elevate_yr_evrdy button {
+        bottom: 14px;
+
+        padding: 12px 22px;
+
+        font-size: 11px;
+
+        border-radius: 17px;
+    }
+
+    .elevate_yr_evrdy button a {
+        font-size: 11px;
+    }
+
+    .elevate_yr_evrdy .img1 h4,
+    .elevate_yr_evrdy .img2 h4,
+    .elevate_yr_evrdy .img3 h4,
+    .elevate_yr_evrdy .img4 h4 {
+
+        top: 27px;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET / LARGE MOBILE
+   576px - 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .elevate {
+        margin-top: 45px;
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .elevate_yr_evrdy {
+        width: 100%;
+        height: 300px;
+
+        display: flex;
+
+        gap: 8px;
+        margin-left: 0;
+
+        padding: 0 6px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scrollbar-width: none;
+    }
+
+    .elevate_yr_evrdy::-webkit-scrollbar {
+        display: none;
+    }
+
+    .elevate_yr_evrdy .card {
+        width: 240px;
+        min-width: 240px;
+        max-width: 240px;
+
+        height: 300px;
+
+        flex-shrink: 0;
+    }
+
+    .elevate_yr_evrdy button {
+        bottom: 14px;
+
+        padding: 11px 20px;
+
+        font-size: 10px;
+
+        border-radius: 16px;
+    }
+
+    .elevate_yr_evrdy button a {
+        font-size: 10px;
+    }
+
+    .elevate_yr_evrdy .img1 h4,
+    .elevate_yr_evrdy .img2 h4,
+    .elevate_yr_evrdy .img3 h4,
+    .elevate_yr_evrdy .img4 h4 {
+
+        top: 24px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        font-size: 14px;
+
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   400px - 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .elevate {
+        margin-top: 35px;
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+
+    .elevate_yr_evrdy {
+        width: 100%;
+        height: 280px;
+
+        gap: 7px;
+        margin-left: 0;
+
+        padding: 0 5px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scrollbar-width: none;
+    }
+
+    .elevate_yr_evrdy::-webkit-scrollbar {
+        display: none;
+    }
+
+    .elevate_yr_evrdy .card {
+        width: 210px;
+        min-width: 210px;
+        max-width: 210px;
+
+        height: 280px;
+
+        flex-shrink: 0;
+    }
+
+    .elevate_yr_evrdy button {
+        bottom: 12px;
+
+        padding: 10px 18px;
+
+        font-size: 9px;
+
+        border-radius: 15px;
+    }
+
+    .elevate_yr_evrdy button a {
+        font-size: 9px;
+    }
+
+    .elevate_yr_evrdy .img1 h4,
+    .elevate_yr_evrdy .img2 h4,
+    .elevate_yr_evrdy .img3 h4,
+    .elevate_yr_evrdy .img4 h4 {
+
+        top: 22px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        font-size: 13px;
+
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   399px AND BELOW
+========================================================= */
+
+@media (max-width: 399px) {
+
+    .elevate {
+        margin-top: 30px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .elevate_yr_evrdy {
+        width: 100%;
+        height: 250px;
+
+        gap: 6px;
+        margin-left: 0;
+
+        padding: 0 5px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scrollbar-width: none;
+    }
+
+    .elevate_yr_evrdy::-webkit-scrollbar {
+        display: none;
+    }
+
+    .elevate_yr_evrdy .card {
+        width: 180px;
+        min-width: 180px;
+        max-width: 180px;
+
+        height: 250px;
+
+        flex-shrink: 0;
+    }
+
+    .elevate_yr_evrdy button {
+        bottom: 10px;
+
+        padding: 8px 15px;
+
+        font-size: 8px;
+
+        border-radius: 14px;
+    }
+
+    .elevate_yr_evrdy button a {
+        font-size: 8px;
+    }
+
+    .elevate_yr_evrdy .img1 h4,
+    .elevate_yr_evrdy .img2 h4,
+    .elevate_yr_evrdy .img3 h4,
+    .elevate_yr_evrdy .img4 h4 {
+
+        top: 19px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        font-size: 12px;
+
+        white-space: nowrap;
+    }
+}
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .elevate {
+        margin-top: 50px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .elevate_yr_evrdy {
+        width: calc(100% - 20px);
+
+        height: 210px;
+
+        gap: 2px;
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .elevate_yr_evrdy .card {
+        width: calc((100% - 6px) / 4);
+    }
+
+    .elevate_yr_evrdy h4 {
+        top: 15px;
+        font-size: 8px;
+    }
+
+    .elevate_yr_evrdy button {
+        padding: 5px 6px;
+
+        font-size: 7px;
+
+        bottom: 8px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #141414;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.footer .newsletter h2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.footer .newsletter p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   EMAIL
+========================================================= */
+
+.footer .email-form {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   EMAIL INPUT BOX
+========================================================= */
+
+.footer .email-input-box {
+    flex: 1;
+    background: transparent;
+    padding: 0 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .email-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 8px 0;
+}
+
+.footer .email-input:focus {
+    border: 2px solid white;
+    outline: none;
+    font-weight: 400;
+    box-shadow: none;
+    background: transparent;
+}
+
+.footer .email-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.footer .subscribe-button {
+    width: 240px;
+    height: 50px;
+    margin-bottom: 30px;
+    background: #25e8e0;
+    border: 1px solid #25e8e0;
+    color: #0d0d0d;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.footer .subscribe-button:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   MOBILE LOGO
+========================================================= */
+
+.footer .mobile-logo {
+    border-top: 1px solid #2b2b2b;
+}
+
+.footer .mobile-logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   MOBILE ACCORDION
+========================================================= */
+
+.footer .accordion-item {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.footer .accordion-button {
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 18px 0;
+    box-shadow: none;
+}
+
+.footer .accordion-button:not(.collapsed) {
+    background: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+.footer .accordion-button::after {
+    filter: invert(1);
+    transform: scale(0.85);
+}
+
+.footer .accordion-body {
+    padding: 0 0 18px;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.footer .footer-links a,
+.footer .desktop-menu a,
+.footer .follow-section a {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 6px 0;
+}
+
+.footer .footer-links a:hover,
+.footer .desktop-menu a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   FOOTER DESKTOP MENU
+========================================================= */
+
+.footer .desktop-menu {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+/* =========================================================
+   ONE CONTAINER - FIVE MENU SECTIONS
+========================================================= */
+
+.footer .menu-links {
+    flex: 1;
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1.4fr
+        1fr
+        1.2fr;
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   MENU COLUMN
+========================================================= */
+
+.footer .menu-column {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.footer .menu-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.footer .menu-title a {
+    font-size: 12px;
+    color: #f79e1b;
+}
+
+
+/* =========================================================
+   FOLLOW
+========================================================= */
+
+.footer .follow-section {
+    border-left: 2px solid white;
+    padding-left: 20px;
+    flex: 0 0 22%;
+}
+
+.footer .follow-description {
+    color: #b9b9b9;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social-icons a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.08);
+}
+
+.footer .social-icons svg {
+    width: 16px;
+    height: 16px;
+    fill: #0d0d0d;
+}
+
+
+/* =========================================================
+   COPYRIGHT + PAYMENT
+========================================================= */
+
+.footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border-top: 1px solid #2b2b2b;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer .copyright-text {
+    color: #b9b9b9;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PAYMENT
+========================================================= */
+
+.footer .payment-methods {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+
+/* =========================================================
+   PAYMENT ICON
+========================================================= */
+
+.footer .payment-card {
+    width: 48px;
+    height: 28px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    font-weight: 900;
+    color: white;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   AMEX
+========================================================= */
+
+.footer .amex-card {
+    background: #1677c8;
+}
+
+
+/* =========================================================
+   DINERS
+========================================================= */
+
+.footer .diners-card {
+    background: #222;
+}
+
+
+/* =========================================================
+   MAESTRO
+========================================================= */
+
+.footer .maestro-card {
+    background: white;
+    color: #111;
+    gap: 0;
+}
+
+.footer .maestro-card b:first-child {
+    color: #eb001b;
+}
+
+.footer .maestro-card b:last-child {
+    color: #f79e1b;
+}
+
+
+/* =========================================================
+   MASTERCARD
+========================================================= */
+
+.footer .mastercard-card {
+    background: white;
+    color: #111;
+    gap: 0;
+}
+
+.footer .mastercard-card b:first-child {
+    color: #eb001b;
+}
+
+.footer .mastercard-card b:last-child {
+    color: #f79e1b;
+}
+
+
+/* =========================================================
+   RUPAY
+========================================================= */
+
+.footer .rupay-card {
+    background: #111;
+    color: white;
+    border: 1px solid #555;
+}
+
+
+/* =========================================================
+   VISA
+========================================================= */
+
+.footer .visa-card {
+    background: #1a1f71;
+}
+
+
+/* =========================================================
+   WATERMARK
+========================================================= */
+
+.footer .footer-watermark {
+    text-align: center;
+    font-weight: 900;
+    font-size: 420px;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    color: #1c1c1c;
+    padding: 40px 0 0;
+    user-select: none;
+    margin-bottom: 80px;
+}
+
+
+/* =========================================================
+   1400px AND ABOVE
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer .newsletter h2 {
+        font-size: 35px;
+    }
+
+    .footer .newsletter p {
+        font-size: 17px;
+    }
+
+    .footer .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    .footer .email-input-box {
+        width: auto;
+        flex: 1;
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .footer .email-input {
+        font-size: 30px;
+    }
+
+    .footer .subscribe-button {
+        width: 220px;
+        height: 70px;
+        font-size: 18px;
+    }
+
+    .footer .menu-links {
+        gap: 30px;
+    }
+
+    .footer .desktop-menu a,
+    .footer .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer .menu-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .footer .follow-description {
+        font-size: 14px;
+    }
+
+    .footer .social-icons {
+        gap: 10px;
+    }
+
+    .footer .social-icons a {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer .social-icons svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer .footer-bottom {
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .footer .copyright-text {
+        font-size: 14px;
+    }
+
+    .footer .payment-methods {
+        gap: 8px;
+    }
+
+    .footer .payment-card {
+        width: 48px;
+        height: 28px;
+        font-size: 8px;
+    }
+
+    .footer .footer-watermark {
+        font-size: 18vw;
+        padding: 40px 0 0;
+    }
+}
+
+
+/* =========================================================
+   1200px - 1399px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .footer {
+        margin-top: 45px;
+    }
+
+    .footer .newsletter h2 {
+        font-size: 33px;
+    }
+
+    .footer .newsletter p {
+        font-size: 16px;
+    }
+
+    .footer .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+
+    .footer .email-input-box {
+        flex: 1;
+        height: 65px;
+        padding: 0 18px;
+    }
+
+    .footer .email-input {
+        font-size: 28px;
+    }
+
+    .footer .subscribe-button {
+        width: 200px;
+        height: 65px;
+        font-size: 17px;
+    }
+
+    .footer .menu-links {
+        gap: 20px;
+    }
+
+    .footer .desktop-menu a,
+    .footer .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer .menu-title {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .footer .follow-description {
+        font-size: 14px;
+    }
+
+    .footer .social-icons {
+        gap: 9px;
+    }
+
+    .footer .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer .social-icons svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer .footer-bottom {
+        gap: 18px;
+        padding: 23px 0;
+    }
+
+    .footer .copyright-text {
+        font-size: 14px;
+    }
+
+    .footer .payment-methods {
+        gap: 7px;
+    }
+
+    .footer .payment-card {
+        width: 46px;
+        height: 27px;
+        font-size: 8px;
+    }
+
+    .footer .footer-watermark {
+        font-size: 19vw;
+    }
+}
+
+
+/* =========================================================
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer .newsletter h2 {
+        font-size: 31px;
+    }
+
+    .footer .newsletter p {
+        font-size: 16px;
+    }
+
+    .footer .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .footer .email-input-box {
+        flex: 1;
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .footer .email-input {
+        font-size: 26px;
+    }
+
+    .footer .subscribe-button {
+        width: 180px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .footer .menu-links {
+        gap: 15px;
+    }
+
+    .footer .desktop-menu a,
+    .footer .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer .menu-title {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .footer .follow-description {
+        font-size: 13px;
+    }
+
+    .footer .social-icons {
+        gap: 8px;
+    }
+
+    .footer .social-icons a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer .social-icons svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer .footer-bottom {
+        gap: 15px;
+        padding: 22px 0;
+    }
+
+    .footer .copyright-text {
+        font-size: 13px;
+    }
+
+    .footer .payment-methods {
+        gap: 6px;
+    }
+
+    .footer .payment-card {
+        width: 45px;
+        height: 27px;
+        font-size: 8px;
+    }
+
+    .footer .footer-watermark {
+        font-size: 20vw;
+    }
+}
+
+
+/* =========================================================
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .footer {
+        margin-top: 35px;
+    }
+
+    .footer .newsletter h2 {
+        font-size: 28px;
+    }
+
+    .footer .newsletter p {
+        font-size: 15px;
+    }
+
+    .footer .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .footer .email-input-box {
+        flex: 1;
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .footer .email-input {
+        font-size: 25px;
+    }
+
+    .footer .subscribe-button {
+        width: 190px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .footer .desktop-menu {
+        display: flex;
+    }
+
+    .footer .menu-links {
+        grid-template-columns:
+            1fr
+            1fr
+            1.4fr
+            1fr
+            1fr;
+
+        gap: 15px;
+    }
+
+    .footer .desktop-menu a,
+    .footer .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer .menu-title {
+        font-size: 16px;
+    }
+
+    .footer .follow-description {
+        font-size: 13px;
+    }
+
+    .footer .social-icons {
+        gap: 8px;
+    }
+
+    .footer .social-icons a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer .social-icons svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer .footer-bottom {
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .footer .copyright-text {
+        font-size: 13px;
+    }
+
+    .footer .payment-methods {
+        gap: 6px;
+    }
+
+    .footer .payment-card {
+        width: 45px;
+        height: 27px;
+        font-size: 8px;
+    }
+
+    .footer .footer-watermark {
+        font-size: 22vw;
+    }
+}
+
+
+/* =========================================================
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer .newsletter h2 {
+        font-size: 27px;
+    }
+
+    .footer .newsletter p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .footer .email-input-box {
+        width: 100%;
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .footer .email-input {
+        font-size: 22px;
+    }
+
+    .footer .subscribe-button {
+        width: 180px;
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .footer .desktop-menu {
+        display: none;
+    }
+
+    .footer .accordion-button {
+        font-size: 15px;
+        padding: 16px 0;
+    }
+
+    .footer .accordion-body {
+        padding-bottom: 16px;
+    }
+
+    .footer .footer-links a {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .footer .follow-description {
+        font-size: 13px;
+    }
+
+    .footer .social-icons {
+        gap: 8px;
+    }
+
+    .footer .social-icons a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer .social-icons svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .footer .copyright-text {
+        font-size: 13px;
+    }
+
+    .footer .payment-methods {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .footer .payment-card {
+        width: 43px;
+        height: 25px;
+        font-size: 8px;
+    }
+
+    .footer .footer-watermark {
+        font-size: 23vw;
+        padding-top: 35px;
+    }
+}
+
+
+/* =========================================================
+   400px - 575px
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer .newsletter h2 {
+        font-size: 25px;
+    }
+
+    .footer .newsletter p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .footer .email-input-box {
+        width: 100%;
+        height: 55px;
+        padding: 0 15px;
+    }
+
+    .footer .email-input {
+        font-size: 20px;
+    }
+
+    .footer .subscribe-button {
+        width: 165px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .footer .desktop-menu {
+        display: none;
+    }
+
+    .footer .accordion-button {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .footer .accordion-body {
+        padding-bottom: 15px;
+    }
+
+    .footer .footer-links a {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .footer .follow-description {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .footer .social-icons {
+        gap: 7px;
+    }
+
+    .footer .social-icons a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer .social-icons svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 18px 0;
+    }
+
+    .footer .copyright-text {
+        font-size: 13px;
+    }
+
+    .footer .payment-methods {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .footer .payment-card {
+        width: 40px;
+        height: 24px;
+        font-size: 7px;
+    }
+
+    .footer .footer-watermark {
+        font-size: 24vw;
+        padding-top: 30px;
+    }
+}
+
+
+/* =========================================================
+   399px AND BELOW
+========================================================= */
+
+@media (max-width: 399px) {
+
+    .footer {
+        margin-top: 20px;
+    }
+
+    .footer .newsletter h2 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .footer .newsletter p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .footer .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer .email-input-box {
+        width: 100%;
+        height: 50px;
+        padding: 0 12px;
+    }
+
+    .footer .email-input {
+        font-size: 18px;
+    }
+
+    .footer .subscribe-button {
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .footer .desktop-menu {
+        display: none;
+    }
+
+    .footer .accordion-button {
+        font-size: 14px;
+        padding: 14px 0;
+    }
+
+    .footer .accordion-body {
+        padding-bottom: 14px;
+    }
+
+    .footer .footer-links a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .footer .follow-description {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .footer .social-icons {
+        gap: 6px;
+    }
+
+    .footer .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .social-icons svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 0;
+    }
+
+    .footer .copyright-text {
+        font-size: 12px;
+    }
+
+    .footer .payment-methods {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .footer .payment-card {
+        width: 38px;
+        height: 23px;
+        font-size: 7px;
+    }
+
+    .footer .footer-watermark {
+        font-size: 25vw;
+        padding-top: 25px;
+    }
+}
+
